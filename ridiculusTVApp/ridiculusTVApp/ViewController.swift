@@ -17,9 +17,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startTimer()
-        firstWord.text = "Paula"
-        secondWord.text = "Carnaval"
-        thirdWord.text = "Boombayah"
+        changeWord(firstWord)
+        changeWord(secondWord)
+        changeWord(thirdWord)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -27,6 +27,43 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func changeWord(_ label:UILabel) {
+        var changed = false
+        while changed == false {
+            if label == firstWord {
+            let newWord = Data.shared.words.randomElement()
+                if newWord?.name == firstWord.text{
+                    changeWord(label)
+                }
+                if newWord?.type == "noun" {
+                    firstWord.text = newWord?.name
+                    changed = true
+                }
+            }
+            if label == secondWord {
+                let newWord = Data.shared.words.randomElement()
+                if newWord?.name == secondWord.text{
+                    changeWord(label)
+                }
+                if newWord?.type == "place" {
+                    secondWord.text = newWord?.name
+                    changed = true
+                }
+            }
+            if label == thirdWord {
+                let newWord = Data.shared.words.randomElement()
+                if newWord?.name == thirdWord.text{
+                    changeWord(label)
+                }
+                if newWord?.type == "verb" {
+                    thirdWord.text = newWord?.name
+                    changed = true
+                }
+            }
+        }
+    }
+    
     var SwiftTimer = Timer()
     var totalTime = 90
     
@@ -38,7 +75,9 @@ class ViewController: UIViewController {
         if totalTime != 0 {
             totalTime -= 1
             if totalTime % 30 == 0 {
-                
+                changeWord(firstWord)
+                changeWord(secondWord)
+                changeWord(thirdWord)
             }
         } else {
             endTimer()
@@ -55,5 +94,6 @@ class ViewController: UIViewController {
         //     let hours: Int = totalSeconds / 3600
         return String(format: "%02d:%02d", minutes, seconds)
     }
+    
 }
 
