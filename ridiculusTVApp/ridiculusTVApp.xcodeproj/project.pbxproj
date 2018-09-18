@@ -11,6 +11,7 @@
 		170A244E2151720000066C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A244D2151720000066C46 /* ViewController.swift */; };
 		170A24512151720000066C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170A244F2151720000066C46 /* Main.storyboard */; };
 		170A24532151720200066C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170A24522151720200066C46 /* Assets.xcassets */; };
+		386CF150215173BA00A14E3D /* ViewControllerTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CF14F215173BA00A14E3D /* ViewControllerTeste.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		170A24502151720000066C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		170A24522151720200066C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		170A24542151720300066C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		386CF14F215173BA00A14E3D /* ViewControllerTeste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTeste.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				170A244B2151720000066C46 /* AppDelegate.swift */,
 				170A244D2151720000066C46 /* ViewController.swift */,
+				386CF14F215173BA00A14E3D /* ViewControllerTeste.swift */,
 				170A244F2151720000066C46 /* Main.storyboard */,
 				170A24522151720200066C46 /* Assets.xcassets */,
 				170A24542151720300066C46 /* Info.plist */,
@@ -133,6 +136,7 @@
 			files = (
 				170A244E2151720000066C46 /* ViewController.swift in Sources */,
 				170A244C2151720000066C46 /* AppDelegate.swift in Sources */,
+				386CF150215173BA00A14E3D /* ViewControllerTeste.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
