@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--FirstView-->
         <scene sceneID="kgC-JN-ZPj">
             <objects>
-                <viewController id="J1G-Oa-hK9" sceneMemberID="viewController">
+                <viewController title="FirstView" id="J1G-Oa-hK9" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8q2-C8-HhF"/>
                         <viewControllerLayoutGuide type="bottom" id="uwY-CP-8TD"/>
@@ -36,15 +36,6 @@
                                             <segue destination="DnI-2W-udp" kind="show" id="tuB-4h-KOz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3t-ld-bxa">
-                                        <rect key="frame" x="1667" y="68" width="115" height="86"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="⚙︎"/>
-                                        <connections>
-                                            <segue destination="ZTA-t4-AUi" kind="show" id="cw4-P3-pyv"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RIDICULUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDh-A1-SYO">
                                         <rect key="frame" x="633" y="306" width="655" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,6 +43,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3t-ld-bxa">
+                                        <rect key="frame" x="1210" y="693" width="115" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="⚙︎"/>
+                                        <connections>
+                                            <segue destination="ZTA-t4-AUi" kind="show" id="cw4-P3-pyv"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="-3894" y="74"/>
         </scene>
-        <!--View Controller-->
+        <!--IPhoneView-->
         <scene sceneID="vRJ-xV-mQu">
             <objects>
-                <viewController id="DnI-2W-udp" sceneMemberID="viewController">
+                <viewController title="IPhoneView" id="DnI-2W-udp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ej1-gb-SIT"/>
                         <viewControllerLayoutGuide type="bottom" id="SqF-pq-ehY"/>
@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="-949" y="127"/>
         </scene>
-        <!--View Controller-->
+        <!--GameView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ridiculusTVApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GameView" id="BYZ-38-t0r" customClass="GameViewController" customModule="ridiculusTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -202,6 +202,8 @@
                         <outlet property="secondWord" destination="EgA-n1-smJ" id="JBJ-8M-8GM"/>
                         <outlet property="thirdWord" destination="5EH-AP-Vf4" id="TQa-Q5-aer"/>
                         <outlet property="timerLabel" destination="MNh-ge-0yl" id="5dy-hs-Ri8"/>
+                        <segue destination="pRb-gr-rxC" kind="show" identifier="endgamesegue" id="9Fj-1y-laO"/>
+                        <segue destination="QqM-8u-uBR" kind="show" identifier="nextroundsegue" id="Ifh-ws-LEz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -209,9 +211,89 @@
             <point key="canvasLocation" x="10638" y="127"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="tnL-oH-NO5">
+            <objects>
+                <viewController id="pRb-gr-rxC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oXc-v5-lTt"/>
+                        <viewControllerLayoutGuide type="bottom" id="77a-Xr-xgj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r3W-f3-03S">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cet-l3-LX9">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONGRATULATIONS TEAM X FOR YOUR VICTORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZM-Hd-s6t">
+                                        <rect key="frame" x="527" y="167" width="866" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytC-Eo-6Oa">
+                                        <rect key="frame" x="329" y="369" width="122" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5G-Xv-vWi">
+                                        <rect key="frame" x="329" y="449" width="123" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fod-ZO-ffn">
+                                        <rect key="frame" x="834" y="718" width="254" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Play again"/>
+                                        <connections>
+                                            <segue destination="hZ7-Zq-zhg" kind="show" id="f81-ef-LjV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDf-8X-xje">
+                                        <rect key="frame" x="834" y="828" width="254" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Menu"/>
+                                        <connections>
+                                            <segue destination="J1G-Oa-hK9" kind="show" id="5iZ-sX-jb7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="xx points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNY-Zy-VQU">
+                                        <rect key="frame" x="1395" y="369" width="154" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yy points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9np-4Q-sPZ">
+                                        <rect key="frame" x="1393" y="449" width="156" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3EQ-H8-jBn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9T-n5-FMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13074" y="130"/>
+        </scene>
+        <!--OptionsView-->
         <scene sceneID="6u7-GI-l6g">
             <objects>
-                <viewController id="ZTA-t4-AUi" sceneMemberID="viewController">
+                <viewController title="OptionsView" id="ZTA-t4-AUi" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jKe-mm-eUu"/>
                         <viewControllerLayoutGuide type="bottom" id="9Or-VK-669"/>
@@ -255,8 +337,8 @@
                                                     <rect key="frame" x="352" y="207" width="1216" height="666"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Configuration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-ZM-Mty">
-                                                            <rect key="frame" x="491" y="56" width="234" height="46"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRF-Jv-hEk">
+                                                            <rect key="frame" x="203" y="216" width="130" height="46"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <nil key="textColor"/>
@@ -264,6 +346,13 @@
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmg-Pk-rgI">
                                                             <rect key="frame" x="903" y="216" width="50" height="46"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLS-vF-cyF">
+                                                            <rect key="frame" x="203" y="383" width="170" height="46"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <nil key="textColor"/>
@@ -286,15 +375,8 @@
                                                                 <segue destination="J1G-Oa-hK9" kind="show" id="pDm-xl-atu"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRF-Jv-hEk">
-                                                            <rect key="frame" x="203" y="216" width="130" height="46"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLS-vF-cyF">
-                                                            <rect key="frame" x="203" y="383" width="170" height="46"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-ZM-Mty">
+                                                            <rect key="frame" x="541" y="67" width="135" height="46"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <nil key="textColor"/>
@@ -318,10 +400,10 @@
             </objects>
             <point key="canvasLocation" x="-995" y="-2029"/>
         </scene>
-        <!--View Controller-->
+        <!--PlayersViewController-->
         <scene sceneID="8YN-b5-XyX">
             <objects>
-                <viewController id="hZ7-Zq-zhg" sceneMemberID="viewController">
+                <viewController title="PlayersViewController" id="hZ7-Zq-zhg" customClass="PlayersViewController" customModule="ridiculusTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PwK-uy-5GX"/>
                         <viewControllerLayoutGuide type="bottom" id="d7G-Wo-D16"/>
@@ -334,46 +416,51 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2a-YX-8Z6">
-                                        <rect key="frame" x="771" y="650" width="379" height="173"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="continue"/>
-                                        <connections>
-                                            <segue destination="REg-DN-YrI" kind="show" id="Kr0-7b-Q9u"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="players screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAq-vF-yn4">
-                                        <rect key="frame" x="558" y="176" width="804" height="145"/>
+                                        <rect key="frame" x="558" y="182" width="804" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="124"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="Ecg-1Y-RSR">
-                                        <rect key="frame" x="905" y="483" width="110" height="46"/>
+                                        <rect key="frame" x="898" y="481" width="124" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                        <nil key="textColor"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="71"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2a-YX-8Z6">
+                                        <rect key="frame" x="771" y="711" width="379" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="continue"/>
+                                        <connections>
+                                            <action selector="continueButton:" destination="hZ7-Zq-zhg" eventType="primaryActionTriggered" id="6zx-D5-AZm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pDk-RF-aGN"/>
                     </view>
+                    <connections>
+                        <outlet property="playersField" destination="Ecg-1Y-RSR" id="cn1-re-xdW"/>
+                        <outlet property="playersLabel" destination="NAq-vF-yn4" id="hzv-QY-QhB"/>
+                        <segue destination="REg-DN-YrI" kind="show" identifier="playersSegue" id="OgL-aa-K8G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMg-5e-2ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1426" y="127"/>
         </scene>
-        <!--View Controller-->
+        <!--SplitView-->
         <scene sceneID="v5f-R1-zIZ">
             <objects>
-                <viewController id="REg-DN-YrI" sceneMemberID="viewController">
+                <viewController title="SplitView" id="REg-DN-YrI" customClass="SplitViewController" customModule="ridiculusTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hG7-5v-eGr"/>
                         <viewControllerLayoutGuide type="bottom" id="SEg-bs-Q5O"/>
@@ -396,7 +483,7 @@
                                             <segue destination="QqM-8u-uBR" kind="show" id="yTb-3z-K4G"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split in x teams of y players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4b-k1-EC4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split in x teams of y players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4b-k1-EC4">
                                         <rect key="frame" x="591" y="274" width="738" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
@@ -409,15 +496,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VLR-bA-OQz"/>
                     </view>
+                    <connections>
+                        <outlet property="splitLabel" destination="O4b-k1-EC4" id="IbK-II-v1t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ui9-or-weR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3684" y="127"/>
         </scene>
-        <!--View Controller-->
+        <!--TurnView-->
         <scene sceneID="nKL-tC-nH5">
             <objects>
-                <viewController id="QqM-8u-uBR" sceneMemberID="viewController">
+                <viewController title="TurnView" id="QqM-8u-uBR" customClass="TurnViewController" customModule="ridiculusTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vi6-8L-LwU"/>
                         <viewControllerLayoutGuide type="bottom" id="utc-f5-llX"/>
@@ -440,8 +530,8 @@
                                             <segue destination="Tiw-ti-tp8" kind="show" id="yWe-Wv-8Ha"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Its Team x turn!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AB-D7-Ls8">
-                                        <rect key="frame" x="754" y="281" width="412" height="70"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Its Team x turn!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AB-D7-Ls8">
+                                        <rect key="frame" x="573" y="281" width="774" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
                                         <nil key="textColor"/>
@@ -453,15 +543,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ogH-sD-Jwc"/>
                     </view>
+                    <connections>
+                        <outlet property="turnLabel" destination="1AB-D7-Ls8" id="y3c-Lk-GKG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlh-IQ-DhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5861" y="127"/>
         </scene>
-        <!--View Controller-->
+        <!--CountdownView-->
         <scene sceneID="5iD-fW-Nh8">
             <objects>
-                <viewController id="Tiw-ti-tp8" sceneMemberID="viewController">
+                <viewController title="CountdownView" id="Tiw-ti-tp8" customClass="CountdownViewController" customModule="ridiculusTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uwY-c2-cVl"/>
                         <viewControllerLayoutGuide type="bottom" id="YrJ-PJ-qGq"/>
@@ -474,33 +567,32 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COUNTDOWN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHX-D1-15z">
-                                        <rect key="frame" x="762" y="505" width="397" height="70"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="READY..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHX-D1-15z">
+                                        <rect key="frame" x="840" y="505" width="240" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgE-4B-GkH">
-                                        <rect key="frame" x="494" y="706" width="933" height="143"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="botao pra fingir"/>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="Gga-S6-ALW"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NdM-TB-Hdd"/>
                     </view>
+                    <connections>
+                        <outlet property="timerLabel" destination="uHX-D1-15z" id="U6V-E6-9hB"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue" id="v4s-s7-dod"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahl-mq-fq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7990" y="127"/>
+            <point key="canvasLocation" x="8266" y="130"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ifh-ws-LEz"/>
+        <segue reference="UuE-kM-Ugs"/>
+        <segue reference="pDm-xl-atu"/>
+    </inferredMetricsTieBreakers>
 </document>

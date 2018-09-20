@@ -9,9 +9,9 @@
 import UIKit
 class Team {
     var score: Int
-    var id: String
+    var id: Int
     
-    init(score:Int, id:String) {
+    init(score:Int, id:Int) {
         self.score = score
         self.id = id
     }

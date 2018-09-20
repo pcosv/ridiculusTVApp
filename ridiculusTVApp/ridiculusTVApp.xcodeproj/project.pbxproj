@@ -8,26 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		170A244C2151720000066C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A244B2151720000066C46 /* AppDelegate.swift */; };
-		170A244E2151720000066C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A244D2151720000066C46 /* ViewController.swift */; };
+		170A244E2151720000066C46 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A244D2151720000066C46 /* GameViewController.swift */; };
 		170A24512151720000066C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170A244F2151720000066C46 /* Main.storyboard */; };
 		170A24532151720200066C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170A24522151720200066C46 /* Assets.xcassets */; };
 		170A245B2151752500066C46 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A245A2151752500066C46 /* Word.swift */; };
+		17101DB6215438120053F522 /* TurnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17101DB5215438120053F522 /* TurnViewController.swift */; };
 		173092272151878700258E66 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173092262151878700258E66 /* Team.swift */; };
 		1730922921518DEF00258E66 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730922821518DEF00258E66 /* Data.swift */; };
-		386CF150215173BA00A14E3D /* ViewControllerTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CF14F215173BA00A14E3D /* ViewControllerTeste.swift */; };
+		1730922B21540FE900258E66 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730922A21540FE900258E66 /* PlayersViewController.swift */; };
+		175C531F21542592006720AE /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C531E21542592006720AE /* SplitViewController.swift */; };
+		386CF150215173BA00A14E3D /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CF14F215173BA00A14E3D /* CountdownViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		170A24482151720000066C46 /* ridiculusTVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ridiculusTVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		170A244B2151720000066C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		170A244D2151720000066C46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		170A244D2151720000066C46 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		170A24502151720000066C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		170A24522151720200066C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		170A24542151720300066C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		170A245A2151752500066C46 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		17101DB5215438120053F522 /* TurnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnViewController.swift; sourceTree = "<group>"; };
 		173092262151878700258E66 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		1730922821518DEF00258E66 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		386CF14F215173BA00A14E3D /* ViewControllerTeste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTeste.swift; sourceTree = "<group>"; };
+		1730922A21540FE900258E66 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		175C531E21542592006720AE /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		386CF14F215173BA00A14E3D /* CountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +69,13 @@
 				170A244B2151720000066C46 /* AppDelegate.swift */,
 				170A245A2151752500066C46 /* Word.swift */,
 				173092262151878700258E66 /* Team.swift */,
-				170A244D2151720000066C46 /* ViewController.swift */,
 				1730922821518DEF00258E66 /* Data.swift */,
-				386CF14F215173BA00A14E3D /* ViewControllerTeste.swift */,
+				1730922A21540FE900258E66 /* PlayersViewController.swift */,
+				386CF14F215173BA00A14E3D /* CountdownViewController.swift */,
+				175C531E21542592006720AE /* SplitViewController.swift */,
+				170A244D2151720000066C46 /* GameViewController.swift */,
 				170A244F2151720000066C46 /* Main.storyboard */,
+				17101DB5215438120053F522 /* TurnViewController.swift */,
 				170A24522151720200066C46 /* Assets.xcassets */,
 				170A24542151720300066C46 /* Info.plist */,
 			);
@@ -143,12 +152,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				170A244E2151720000066C46 /* ViewController.swift in Sources */,
+				170A244E2151720000066C46 /* GameViewController.swift in Sources */,
+				17101DB6215438120053F522 /* TurnViewController.swift in Sources */,
+				1730922B21540FE900258E66 /* PlayersViewController.swift in Sources */,
 				1730922921518DEF00258E66 /* Data.swift in Sources */,
 				170A244C2151720000066C46 /* AppDelegate.swift in Sources */,
-				386CF150215173BA00A14E3D /* ViewControllerTeste.swift in Sources */,
+				386CF150215173BA00A14E3D /* CountdownViewController.swift in Sources */,
 				173092272151878700258E66 /* Team.swift in Sources */,
 				170A245B2151752500066C46 /* Word.swift in Sources */,
+				175C531F21542592006720AE /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

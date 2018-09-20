@@ -12,5 +12,10 @@ import CoreData
 
 class Data {
     let words : [Word] = [Word(name: "Xuxa", type: "noun"),Word(name: "Obama", type: "noun"),Word(name: "Teacher", type: "noun"),Word(name: "Britney", type: "noun"),Word(name: "Lula", type: "noun"),Word(name: "Egito", type: "place"),Word(name: "Paris", type: "place"),Word(name: "Disney", type: "place"),Word(name: "Bar", type: "place"),Word(name: "Castle", type: "place"),Word(name: "Singing", type: "verb"),Word(name: "Dancing", type: "verb"),Word(name: "Shower", type: "verb"),Word(name: "Digging", type: "verb"),Word(name: "Driving", type: "verb")]
-static var shared = Data()
+    
+    var teams : [Team] = []
+    var teamsDone : [Team] = []
+    
+    static var shared = Data()
 }
+

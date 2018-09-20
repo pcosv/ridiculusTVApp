@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GameViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var firstWord: UILabel!
     @IBOutlet weak var secondWord: UILabel!
@@ -16,11 +16,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startTimer()
         changeWord(firstWord)
         changeWord(secondWord)
         changeWord(thirdWord)
-        // Do any additional setup after loading the view, typically from a nib.
+        startTimer()
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,15 +72,24 @@ class ViewController: UIViewController {
     @objc func updateTime() {
         timerLabel.text = "\(timeFormatted(totalTime))"
         if totalTime != 0 {
-            totalTime -= 1
-            if totalTime % 30 == 0 {
+            if totalTime % 30 == 0 && totalTime != 90 {
                 changeWord(firstWord)
                 changeWord(secondWord)
                 changeWord(thirdWord)
             }
+            totalTime -= 1
         } else {
             endTimer()
+            Data.shared.teamsDone.append((Data.shared.teams.last)!)
+            Data.shared.teams.removeLast()
+            if Data.shared.teams.count > 0 {
+                self.performSegue(withIdentifier: "nextroundsegue", sender: nil)
+            } else {
+                self.performSegue(withIdentifier: "endgamesegue", sender: nil)
+            }
         }
+        
+
     }
     
     func endTimer() {
