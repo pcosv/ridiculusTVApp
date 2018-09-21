@@ -13,7 +13,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var firstWord: UILabel!
     @IBOutlet weak var secondWord: UILabel!
     @IBOutlet weak var thirdWord: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         changeWord(firstWord)
@@ -28,38 +28,29 @@ class GameViewController: UIViewController {
     }
     
     func changeWord(_ label:UILabel) {
-        var changed = false
-        while changed == false {
-            if label == firstWord {
-            let newWord = Data.shared.words.randomElement()
-                if newWord?.name == firstWord.text{
-                    changeWord(label)
-                }
-                if newWord?.type == "noun" {
-                    firstWord.text = newWord?.name
-                    changed = true
-                }
-            }
-            if label == secondWord {
-                let newWord = Data.shared.words.randomElement()
-                if newWord?.name == secondWord.text{
-                    changeWord(label)
-                }
-                if newWord?.type == "place" {
-                    secondWord.text = newWord?.name
-                    changed = true
-                }
-            }
-            if label == thirdWord {
-                let newWord = Data.shared.words.randomElement()
-                if newWord?.name == thirdWord.text{
-                    changeWord(label)
-                }
-                if newWord?.type == "verb" {
-                    thirdWord.text = newWord?.name
-                    changed = true
-                }
-            }
+        if label == firstWord {
+            let aux = Data.shared.noun.count
+            let number = Int.random(in: 0 ... aux - 1)
+            let newWord = Data.shared.noun[number]
+            firstWord.text = newWord.name
+            Data.shared.nounUsed.append(newWord)
+            Data.shared.noun.remove(at: number)
+        }
+        if label == secondWord {
+            let aux = Data.shared.place.count
+            let number = Int.random(in: 0 ... aux - 1)
+            let newWord = Data.shared.noun[number]
+            secondWord.text = newWord.name
+            Data.shared.placeUsed.append(newWord)
+            Data.shared.place.remove(at: number)
+        }
+        if label == thirdWord {
+            let aux = Data.shared.place.count
+            let number = Int.random(in: 0 ... aux - 1)
+            let newWord = Data.shared.noun[number]
+            thirdWord.text = newWord.name
+            Data.shared.placeUsed.append(newWord)
+            Data.shared.place.remove(at: number)
         }
     }
     
@@ -86,6 +77,7 @@ class GameViewController: UIViewController {
                 self.performSegue(withIdentifier: "nextroundsegue", sender: nil)
             } else {
                 self.performSegue(withIdentifier: "endgamesegue", sender: nil)
+//                for
             }
         }
         
@@ -100,7 +92,7 @@ class GameViewController: UIViewController {
         let seconds: Int = totalSeconds % 60
         let minutes: Int = (totalSeconds / 60) % 60
         //     let hours: Int = totalSeconds / 3600
-        return String(format: "%02d:%02d", minutes, seconds)
+        return String(format: "%2d:%02d", minutes, seconds)
     }
     
 }
