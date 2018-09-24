@@ -32,7 +32,7 @@ class GameViewController: UIViewController {
             let aux = Data.shared.noun.count
             let number = Int.random(in: 0 ... aux - 1)
             let newWord = Data.shared.noun[number]
-            firstWord.text = newWord.name
+            firstWord.text = newWord.name.localized()
             Data.shared.nounUsed.append(newWord)
             Data.shared.noun.remove(at: number)
         }
@@ -40,7 +40,7 @@ class GameViewController: UIViewController {
             let aux = Data.shared.place.count
             let number = Int.random(in: 0 ... aux - 1)
             let newWord = Data.shared.noun[number]
-            secondWord.text = newWord.name
+            secondWord.text = newWord.name.localized()
             Data.shared.placeUsed.append(newWord)
             Data.shared.place.remove(at: number)
         }
@@ -48,7 +48,7 @@ class GameViewController: UIViewController {
             let aux = Data.shared.place.count
             let number = Int.random(in: 0 ... aux - 1)
             let newWord = Data.shared.noun[number]
-            thirdWord.text = newWord.name
+            thirdWord.text = newWord.name.localized()
             Data.shared.placeUsed.append(newWord)
             Data.shared.place.remove(at: number)
         }
@@ -97,3 +97,8 @@ class GameViewController: UIViewController {
     
 }
 
+extension String {
+    func localized(bundle: Bundle = .main, tableName: String = "Localizable") -> String {
+        return NSLocalizedString(self, tableName: tableName, value: "**\(self)**", comment: "")
+    }
+}

@@ -293,7 +293,7 @@
         <!--OptionsView-->
         <scene sceneID="6u7-GI-l6g">
             <objects>
-                <viewController title="OptionsView" id="ZTA-t4-AUi" sceneMemberID="viewController">
+                <viewController title="OptionsView" id="ZTA-t4-AUi" customClass="OptionsViewController" customModule="ridiculusTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jKe-mm-eUu"/>
                         <viewControllerLayoutGuide type="bottom" id="9Or-VK-669"/>
@@ -344,8 +344,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmg-Pk-rgI">
-                                                            <rect key="frame" x="903" y="216" width="50" height="46"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmg-Pk-rgI">
+                                                            <rect key="frame" x="834" y="216" width="185" height="46"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <nil key="textColor"/>
@@ -358,8 +358,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIJ-RF-sPJ">
-                                                            <rect key="frame" x="866" y="383" width="124" height="46"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="English" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIJ-RF-sPJ">
+                                                            <rect key="frame" x="812" y="383" width="234" height="46"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <nil key="textColor"/>
@@ -382,6 +382,42 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWk-MU-8Da">
+                                                            <rect key="frame" x="725" y="196" width="123" height="86"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                            <state key="normal" title="◀️"/>
+                                                            <connections>
+                                                                <action selector="changeSound:" destination="ZTA-t4-AUi" eventType="primaryActionTriggered" id="DZe-zM-G9G"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnu-ZQ-Mbi">
+                                                            <rect key="frame" x="1013" y="196" width="123" height="86"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                            <state key="normal" title="▶️"/>
+                                                            <connections>
+                                                                <action selector="changeSound:" destination="ZTA-t4-AUi" eventType="primaryActionTriggered" id="1CM-hx-ckq"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTP-1a-Zzy">
+                                                            <rect key="frame" x="1013" y="363" width="123" height="86"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                            <state key="normal" title="▶️"/>
+                                                            <connections>
+                                                                <action selector="changeLanguage:" destination="ZTA-t4-AUi" eventType="primaryActionTriggered" id="5FY-B9-PI6"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2j-pQ-F3p">
+                                                            <rect key="frame" x="725" y="363" width="123" height="86"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                            <state key="normal" title="◀️"/>
+                                                            <connections>
+                                                                <action selector="changeLanguage:" destination="ZTA-t4-AUi" eventType="primaryActionTriggered" id="GXR-HS-vdA"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
@@ -395,6 +431,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uu1-gM-CMF"/>
                     </view>
+                    <connections>
+                        <outlet property="languageOutlet" destination="MIJ-RF-sPJ" id="jtK-oa-2TI"/>
+                        <outlet property="soundOutlet" destination="fmg-Pk-rgI" id="n9r-oK-SxO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Du0-hy-4jl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

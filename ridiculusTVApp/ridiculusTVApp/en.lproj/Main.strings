@@ -1,0 +1,123 @@
+
+/* Class = "UILabel"; text = "Its Team x turn!"; ObjectID = "1AB-D7-Ls8"; */
+"1AB-D7-Ls8.text" = "Its Team x turn!";
+
+/* Class = "UILabel"; text = "CONGRATULATIONS TEAM X FOR YOUR VICTORY"; ObjectID = "1ZM-Hd-s6t"; */
+"1ZM-Hd-s6t.text" = "CONGRATULATIONS TEAM X FOR YOUR VICTORY";
+
+/* Class = "UIButton"; normalTitle = "⚙︎"; ObjectID = "3Wk-yb-X8w"; */
+"3Wk-yb-X8w.normalTitle" = "⚙︎";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5EH-AP-Vf4"; */
+"5EH-AP-Vf4.text" = "Label";
+
+/* Class = "UILabel"; text = "yy points"; ObjectID = "9np-4Q-sPZ"; */
+"9np-4Q-sPZ.text" = "yy points";
+
+/* Class = "UIButton"; normalTitle = "continue"; ObjectID = "A2a-YX-8Z6"; */
+"A2a-YX-8Z6.normalTitle" = "continue";
+
+/* Class = "UIViewController"; title = "GameView"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "GameView";
+
+/* Class = "UIViewController"; title = "IPhoneView"; ObjectID = "DnI-2W-udp"; */
+"DnI-2W-udp.title" = "IPhoneView";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "EgA-n1-smJ"; */
+"EgA-n1-smJ.text" = "Label";
+
+/* Class = "UILabel"; text = "Team y"; ObjectID = "F5G-Xv-vWi"; */
+"F5G-Xv-vWi.text" = "Team y";
+
+/* Class = "UIButton"; normalTitle = "Play again"; ObjectID = "Fod-ZO-ffn"; */
+"Fod-ZO-ffn.normalTitle" = "Play again";
+
+/* Class = "UIButton"; normalTitle = "Menu"; ObjectID = "HDf-8X-xje"; */
+"HDf-8X-xje.normalTitle" = "Menu";
+
+/* Class = "UIViewController"; title = "FirstView"; ObjectID = "J1G-Oa-hK9"; */
+"J1G-Oa-hK9.title" = "FirstView";
+
+/* Class = "UIButton"; normalTitle = "⚙︎"; ObjectID = "J3t-ld-bxa"; */
+"J3t-ld-bxa.normalTitle" = "⚙︎";
+
+/* Class = "UILabel"; text = "Sounds"; ObjectID = "JRF-Jv-hEk"; */
+"JRF-Jv-hEk.text" = "Sounds";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "MIJ-RF-sPJ"; */
+"MIJ-RF-sPJ.text" = "English";
+
+/* Class = "UILabel"; text = "1:30"; ObjectID = "MNh-ge-0yl"; */
+"MNh-ge-0yl.text" = "1:30";
+
+/* Class = "UILabel"; text = "iphone is connected"; ObjectID = "N2J-9J-6ea"; */
+"N2J-9J-6ea.text" = "iphone is connected";
+
+/* Class = "UILabel"; text = "players screen"; ObjectID = "NAq-vF-yn4"; */
+"NAq-vF-yn4.text" = "players screen";
+
+/* Class = "UILabel"; text = "Split in x teams of y players"; ObjectID = "O4b-k1-EC4"; */
+"O4b-k1-EC4.text" = "Split in x teams of y players";
+
+/* Class = "UILabel"; text = "Laugh-o-meter"; ObjectID = "PlK-Jx-roa"; */
+"PlK-Jx-roa.text" = "Laugh-o-meter";
+
+/* Class = "UIButton"; normalTitle = "play"; ObjectID = "QFI-pv-YKf"; */
+"QFI-pv-YKf.normalTitle" = "play";
+
+/* Class = "UIViewController"; title = "TurnView"; ObjectID = "QqM-8u-uBR"; */
+"QqM-8u-uBR.title" = "TurnView";
+
+/* Class = "UIButton"; normalTitle = "start"; ObjectID = "R6z-73-kce"; */
+"R6z-73-kce.normalTitle" = "start";
+
+/* Class = "UIViewController"; title = "SplitView"; ObjectID = "REg-DN-YrI"; */
+"REg-DN-YrI.title" = "SplitView";
+
+/* Class = "UIViewController"; title = "CountdownView"; ObjectID = "Tiw-ti-tp8"; */
+"Tiw-ti-tp8.title" = "CountdownView";
+
+/* Class = "UIViewController"; title = "OptionsView"; ObjectID = "ZTA-t4-AUi"; */
+"ZTA-t4-AUi.title" = "OptionsView";
+
+/* Class = "UIButton"; normalTitle = "start"; ObjectID = "aD3-EP-eKS"; */
+"aD3-EP-eKS.normalTitle" = "start";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "aLS-vF-cyF"; */
+"aLS-vF-cyF.text" = "Language";
+
+/* Class = "UILabel"; text = "On"; ObjectID = "fmg-Pk-rgI"; */
+"fmg-Pk-rgI.text" = "On";
+
+/* Class = "UILabel"; text = "Options"; ObjectID = "fvb-ZM-Mty"; */
+"fvb-ZM-Mty.text" = "Options";
+
+/* Class = "UIButton"; normalTitle = "close"; ObjectID = "g6y-Xx-Ppa"; */
+"g6y-Xx-Ppa.normalTitle" = "close";
+
+/* Class = "UILabel"; text = "RIDICULUS"; ObjectID = "gDH-LN-pGW"; */
+"gDH-LN-pGW.text" = "RIDICULUS";
+
+/* Class = "UIViewController"; title = "PlayersViewController"; ObjectID = "hZ7-Zq-zhg"; */
+"hZ7-Zq-zhg.title" = "PlayersViewController";
+
+/* Class = "UILabel"; text = "xx points"; ObjectID = "jNY-Zy-VQU"; */
+"jNY-Zy-VQU.text" = "xx points";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nEV-1j-EqI"; */
+"nEV-1j-EqI.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qca-58-dDf"; */
+"qca-58-dDf.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "READY..."; ObjectID = "uHX-D1-15z"; */
+"uHX-D1-15z.text" = "READY...";
+
+/* Class = "UILabel"; text = "RIDICULUS"; ObjectID = "xDh-A1-SYO"; */
+"xDh-A1-SYO.text" = "RIDICULUS";
+
+/* Class = "UIButton"; normalTitle = "start"; ObjectID = "y6K-lU-jxK"; */
+"y6K-lU-jxK.normalTitle" = "start";
+
+/* Class = "UILabel"; text = "Team x"; ObjectID = "ytC-Eo-6Oa"; */
+"ytC-Eo-6Oa.text" = "Team x";
