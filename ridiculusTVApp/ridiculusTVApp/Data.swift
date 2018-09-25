@@ -24,6 +24,10 @@ class Data {
     var teams : [Team] = []
     var teamsDone : [Team] = []
     
+    var collectionWords : [Word] = []
+    var newCollectionWords : [Word] = []
+    var finalCollectionWords : [Word] = []
+    
     static var shared = Data()
 }
 

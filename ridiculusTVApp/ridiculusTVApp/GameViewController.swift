@@ -8,18 +8,60 @@
 
 import UIKit
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == collectionView1 {
+            return Data.shared.collectionWords.count
+        }
+        if collectionView == collectionView2 {
+            return Data.shared.newCollectionWords.count
+        }
+        else {
+            return Data.shared.finalCollectionWords.count
+        }
+    }
+
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == collectionView1 {
+            let cella = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCollectionViewCell
+            cella.collectionViewLabel.text = Data.shared.collectionWords[indexPath.row].name
+            return cella
+        }
+        if collectionView == collectionView2 {
+            let cellb = collectionView.dequeueReusableCell(withReuseIdentifier: "cella", for: indexPath) as! CustomCollectionViewCell
+            cellb.collectionViewLabel.text = Data.shared.newCollectionWords[indexPath.row].name
+            return cellb
+        } else {
+            let cellc = collectionView.dequeueReusableCell(withReuseIdentifier: "cellb", for: indexPath) as! CustomCollectionViewCell
+            cellc.collectionViewLabel.text = Data.shared.finalCollectionWords[indexPath.row].name
+            return cellc
+        }
+    }
+    
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var firstWord: UILabel!
     @IBOutlet weak var secondWord: UILabel!
     @IBOutlet weak var thirdWord: UILabel!
-
+    
+    @IBOutlet weak var collectionView1: UICollectionView!
+    @IBOutlet weak var collectionView2: UICollectionView!
+    @IBOutlet weak var collectionView3: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         changeWord(firstWord)
         changeWord(secondWord)
         changeWord(thirdWord)
         startTimer()
+        self.collectionView1.reloadData()
+        self.collectionView1.delegate = self
+        self.collectionView1.dataSource = self
+        self.collectionView2.delegate = self
+        self.collectionView2.dataSource = self
+        self.collectionView3.delegate = self
+        self.collectionView3.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,25 +74,28 @@ class GameViewController: UIViewController {
             let aux = Data.shared.noun.count
             let number = Int.random(in: 0 ... aux - 1)
             let newWord = Data.shared.noun[number]
-            firstWord.text = newWord.name.localized()
+            firstWord.text = newWord.name
             Data.shared.nounUsed.append(newWord)
+            Data.shared.collectionWords.append(newWord)
             Data.shared.noun.remove(at: number)
         }
         if label == secondWord {
             let aux = Data.shared.place.count
             let number = Int.random(in: 0 ... aux - 1)
-            let newWord = Data.shared.noun[number]
-            secondWord.text = newWord.name.localized()
+            let newWord = Data.shared.place[number]
+            secondWord.text = newWord.name
             Data.shared.placeUsed.append(newWord)
+            Data.shared.collectionWords.append(newWord)
             Data.shared.place.remove(at: number)
         }
         if label == thirdWord {
-            let aux = Data.shared.place.count
+            let aux = Data.shared.verb.count
             let number = Int.random(in: 0 ... aux - 1)
-            let newWord = Data.shared.noun[number]
-            thirdWord.text = newWord.name.localized()
-            Data.shared.placeUsed.append(newWord)
-            Data.shared.place.remove(at: number)
+            let newWord = Data.shared.verb[number]
+            thirdWord.text = newWord.name
+            Data.shared.verbUsed.append(newWord)
+            Data.shared.collectionWords.append(newWord)
+            Data.shared.verb.remove(at: number)
         }
     }
     
@@ -62,8 +107,15 @@ class GameViewController: UIViewController {
     }
     @objc func updateTime() {
         timerLabel.text = "\(timeFormatted(totalTime))"
+        self.collectionView1.reloadData()
         if totalTime != 0 {
             if totalTime % 30 == 0 && totalTime != 90 {
+                Data.shared.finalCollectionWords = Data.shared.newCollectionWords
+                Data.shared.newCollectionWords.removeAll()
+                Data.shared.newCollectionWords = Data.shared.collectionWords
+                Data.shared.collectionWords.removeAll()
+                self.collectionView2.reloadData()
+                self.collectionView3.reloadData()
                 changeWord(firstWord)
                 changeWord(secondWord)
                 changeWord(thirdWord)
@@ -77,7 +129,6 @@ class GameViewController: UIViewController {
                 self.performSegue(withIdentifier: "nextroundsegue", sender: nil)
             } else {
                 self.performSegue(withIdentifier: "endgamesegue", sender: nil)
-//                for
             }
         }
         
