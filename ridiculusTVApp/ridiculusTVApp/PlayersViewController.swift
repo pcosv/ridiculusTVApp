@@ -19,7 +19,7 @@ class PlayersViewController : UIViewController {
     @IBOutlet weak var playersLabel: UILabel!
     
     @IBAction func continueButton(_ sender: Any) {
-        if playersField.text != nil {
+        if playersField.text != "" {
             players = Int(playersField.text!)!
             if players < 3 {
                 playersLabel.text = "Chame mais amigos para jogar!"

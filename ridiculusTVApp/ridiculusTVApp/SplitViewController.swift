@@ -13,7 +13,7 @@ class SplitViewController : UIViewController {
     var teamNumber:Int = 0
     override func viewDidLoad() {
         teamNumber = Data.shared.teams.count
-        splitLabel.text = "Split in \(teamNumber) teams."
+        splitLabel.text = String(format: "Split in %d teams".localized(), teamNumber)
     }
     override func didReceiveMemoryWarning() {
     }

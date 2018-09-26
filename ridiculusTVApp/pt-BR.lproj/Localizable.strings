@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  ridiculusTVApp
+
+  Created by René Melo de Lucena on 26/09/2018.
+  Copyright © 2018 René Melo de Lucena. All rights reserved.
+*/
+
+"Xuxa" = "Xuxa";
+"Obama" = "Obama";
+"Teacher" = "Professor";
+"Britney" = "Britney";
+"Lula" = "Lula";
+"castor" = "Castor";
+"Eliete" = "Eliete";
+"Francisco" = "Francisco";
+"Brownie" = "Brownie";
+"Egypt" = "Egito";
+"Paris" = "Paris";
+"Disney" = "Disney";
+"Bar" = "Bar";
+"Castle" = "Castelo";
+"Carnival" = "Carnaval";
+"Zero Um" = "Zero Um";
+"Lab" = "Laboratório";
+"Beach" = "Praia";
+"Singing" = "Cantar";
+"Dancing" = "Dançar";
+"Shower" = "Tomar banho";
+"Digging" = "Cavar";
+"Driving" = "Dirigir";
+"Cry" = "Chorar";
+"Buy" = "Comprar";
+"smell" = "Cheirar";
+"It's team %d turn!" = "Vez do time %d!";
+"Split in %d teams" = "Dividam-se em %d times!";
+"START!" = "COMEÇAR!";

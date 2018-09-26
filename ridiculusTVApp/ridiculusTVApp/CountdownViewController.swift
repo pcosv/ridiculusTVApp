@@ -30,7 +30,7 @@ class CountdownViewController: UIViewController {
             timerLabel.text = "\(totalTime-1)"
             totalTime -= 1
         } else if totalTime == 1{
-            timerLabel.text = "START!"
+            timerLabel.text = "START!".localized()
             totalTime -= 1
         } else {
             

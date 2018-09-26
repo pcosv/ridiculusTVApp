@@ -17,3 +17,4 @@ class Word {
         self.type = type
     }
 }
+

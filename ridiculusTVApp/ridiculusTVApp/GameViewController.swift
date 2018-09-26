@@ -26,16 +26,16 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == collectionView1 {
             let cella = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCollectionViewCell
-            cella.collectionViewLabel.text = Data.shared.collectionWords[indexPath.row].name
+            cella.collectionViewLabel.text = Data.shared.collectionWords[indexPath.row].name.localized()
             return cella
         }
         if collectionView == collectionView2 {
             let cellb = collectionView.dequeueReusableCell(withReuseIdentifier: "cella", for: indexPath) as! CustomCollectionViewCell
-            cellb.collectionViewLabel.text = Data.shared.newCollectionWords[indexPath.row].name
+            cellb.collectionViewLabel.text = Data.shared.newCollectionWords[indexPath.row].name.localized()
             return cellb
         } else {
             let cellc = collectionView.dequeueReusableCell(withReuseIdentifier: "cellb", for: indexPath) as! CustomCollectionViewCell
-            cellc.collectionViewLabel.text = Data.shared.finalCollectionWords[indexPath.row].name
+            cellc.collectionViewLabel.text = Data.shared.finalCollectionWords[indexPath.row].name.localized()
             return cellc
         }
     }
@@ -152,6 +152,6 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
 extension String {
     func localized(bundle: Bundle = .main, tableName: String = "Localizable") -> String {
-        return NSLocalizedString(self, tableName: tableName, value: "**\(self)**", comment: "")
+        return NSLocalizedString(self, tableName: tableName, value: "\(self)", comment: "")
     }
 }
