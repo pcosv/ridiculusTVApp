@@ -41,7 +41,7 @@
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="play" backgroundImage="PlayButton"/>
                                         <connections>
-                                            <segue destination="DnI-2W-udp" kind="show" id="tuB-4h-KOz"/>
+                                            <segue destination="OKq-8f-RaX" kind="show" id="7kE-dw-rKX"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RidiculusLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fCo-ck-d0b">
@@ -111,6 +111,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFD-Mk-rST" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-949" y="127"/>
+        </scene>
+        <!--Connecti Phone View Controller-->
+        <scene sceneID="fDY-xV-c2n">
+            <objects>
+                <viewController id="OKq-8f-RaX" customClass="ConnectiPhoneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wzI-zO-tEO"/>
+                        <viewControllerLayoutGuide type="bottom" id="78C-aA-PUq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P9G-Zb-jU8">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZE-K7-2SU">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-Ai-Buu">
+                                        <rect key="frame" x="771" y="650" width="379" height="173"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="start"/>
+                                        <connections>
+                                            <segue destination="DnI-2W-udp" kind="show" id="Day-mI-K1C"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="connect your iphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUy-BT-xiY">
+                                        <rect key="frame" x="398" y="375" width="1137" height="145"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="124"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Net-Ee-lKA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FR3-cL-j2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2199" y="1411"/>
         </scene>
         <!--GameView-->
         <scene sceneID="tne-QT-ifu">

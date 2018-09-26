@@ -21,6 +21,8 @@
 		1730922921518DEF00258E66 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730922821518DEF00258E66 /* Data.swift */; };
 		1730922B21540FE900258E66 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730922A21540FE900258E66 /* PlayersViewController.swift */; };
 		175C531F21542592006720AE /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C531E21542592006720AE /* SplitViewController.swift */; };
+		382DFAC6215C0D7700C6A6FE /* ConnectiPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DFAC5215C0D7700C6A6FE /* ConnectiPhoneViewController.m */; };
+		382DFAC9215C0DAB00C6A6FE /* MPCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DFAC8215C0DAB00C6A6FE /* MPCHandler.m */; };
 		386CF150215173BA00A14E3D /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CF14F215173BA00A14E3D /* CountdownViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,11 @@
 		2839544B215C1BE800142717 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
 		2839544C215C1BE800142717 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
 		2839544D215C1BE800142717 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		382DFAC3215C0D7700C6A6FE /* ridiculusTVApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ridiculusTVApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		382DFAC4215C0D7700C6A6FE /* ConnectiPhoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectiPhoneViewController.h; sourceTree = "<group>"; };
+		382DFAC5215C0D7700C6A6FE /* ConnectiPhoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectiPhoneViewController.m; sourceTree = "<group>"; };
+		382DFAC7215C0DAB00C6A6FE /* MPCHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCHandler.h; sourceTree = "<group>"; };
+		382DFAC8215C0DAB00C6A6FE /* MPCHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCHandler.m; sourceTree = "<group>"; };
 		386CF14F215173BA00A14E3D /* CountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +101,8 @@
 			children = (
 				17101DBE21597B040053F522 /* FC8A943F-A54D-44C0-95B6-6E33BFC966C9.png */,
 				170A244B2151720000066C46 /* AppDelegate.swift */,
+				382DFAC7215C0DAB00C6A6FE /* MPCHandler.h */,
+				382DFAC8215C0DAB00C6A6FE /* MPCHandler.m */,
 				170A245A2151752500066C46 /* Word.swift */,
 				173092262151878700258E66 /* Team.swift */,
 				1730922821518DEF00258E66 /* Data.swift */,
@@ -101,12 +110,15 @@
 				1730922A21540FE900258E66 /* PlayersViewController.swift */,
 				386CF14F215173BA00A14E3D /* CountdownViewController.swift */,
 				175C531E21542592006720AE /* SplitViewController.swift */,
+				382DFAC4215C0D7700C6A6FE /* ConnectiPhoneViewController.h */,
+				382DFAC5215C0D7700C6A6FE /* ConnectiPhoneViewController.m */,
 				17101DB5215438120053F522 /* TurnViewController.swift */,
 				170A244D2151720000066C46 /* GameViewController.swift */,
 				170A244F2151720000066C46 /* Main.storyboard */,
 				171D0B2C215AD03100D3B440 /* CustomCollectionViewCell.swift */,
 				170A24522151720200066C46 /* Assets.xcassets */,
 				170A24542151720300066C46 /* Info.plist */,
+				382DFAC3215C0D7700C6A6FE /* ridiculusTVApp-Bridging-Header.h */,
 			);
 			path = ridiculusTVApp;
 			sourceTree = "<group>";
@@ -164,6 +176,7 @@
 				TargetAttributes = {
 					170A24472151720000066C46 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -206,8 +219,10 @@
 			files = (
 				170A244E2151720000066C46 /* GameViewController.swift in Sources */,
 				17101DB6215438120053F522 /* TurnViewController.swift in Sources */,
+				382DFAC9215C0DAB00C6A6FE /* MPCHandler.m in Sources */,
 				1730922B21540FE900258E66 /* PlayersViewController.swift in Sources */,
 				1730922921518DEF00258E66 /* Data.swift in Sources */,
+				382DFAC6215C0D7700C6A6FE /* ConnectiPhoneViewController.m in Sources */,
 				170A244C2151720000066C46 /* AppDelegate.swift in Sources */,
 				386CF150215173BA00A14E3D /* CountdownViewController.swift in Sources */,
 				173092272151878700258E66 /* Team.swift in Sources */,
@@ -361,8 +376,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XSMZSJGU5F;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SNKGQ9S9S3;
 				INFOPLIST_FILE = ridiculusTVApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,6 +387,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vilasafe.ridiculusTVApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ridiculusTVApp/ridiculusTVApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -380,8 +399,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XSMZSJGU5F;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SNKGQ9S9S3;
 				INFOPLIST_FILE = ridiculusTVApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vilasafe.ridiculusTVApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ridiculusTVApp/ridiculusTVApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
