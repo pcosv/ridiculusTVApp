@@ -15,6 +15,9 @@ class TurnViewController : UIViewController {
     override func viewDidLoad() {
         teamTurn = (Data.shared.teams.last?.id)!
         turnLabel.text = "It's team \(teamTurn) turn!"
+        Data.shared.collectionWords.removeAll()
+        Data.shared.newCollectionWords.removeAll()
+        Data.shared.finalCollectionWords.removeAll()
     }
     
     override func didReceiveMemoryWarning() {

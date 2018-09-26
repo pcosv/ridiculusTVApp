@@ -55,7 +55,6 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         changeWord(secondWord)
         changeWord(thirdWord)
         startTimer()
-        self.collectionView1.reloadData()
         self.collectionView1.delegate = self
         self.collectionView1.dataSource = self
         self.collectionView2.delegate = self
@@ -107,18 +106,18 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     @objc func updateTime() {
         timerLabel.text = "\(timeFormatted(totalTime))"
-        self.collectionView1.reloadData()
         if totalTime != 0 {
             if totalTime % 30 == 0 && totalTime != 90 {
                 Data.shared.finalCollectionWords = Data.shared.newCollectionWords
                 Data.shared.newCollectionWords.removeAll()
                 Data.shared.newCollectionWords = Data.shared.collectionWords
                 Data.shared.collectionWords.removeAll()
-                self.collectionView2.reloadData()
-                self.collectionView3.reloadData()
                 changeWord(firstWord)
                 changeWord(secondWord)
                 changeWord(thirdWord)
+                self.collectionView1.reloadData()
+                self.collectionView2.reloadData()
+                self.collectionView3.reloadData()
             }
             totalTime -= 1
         } else {
@@ -128,6 +127,9 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
             if Data.shared.teams.count > 0 {
                 self.performSegue(withIdentifier: "nextroundsegue", sender: nil)
             } else {
+                Data.shared.noun.append(contentsOf: Data.shared.nounUsed)
+                Data.shared.place.append(contentsOf: Data.shared.placeUsed)
+                Data.shared.verb.append(contentsOf: Data.shared.verbUsed)
                 self.performSegue(withIdentifier: "endgamesegue", sender: nil)
             }
         }
