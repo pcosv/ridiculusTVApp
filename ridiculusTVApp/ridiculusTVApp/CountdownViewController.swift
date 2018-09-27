@@ -11,9 +11,16 @@ import UIKit
 class CountdownViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var turnLabel: UILabel!
     
     override func viewDidLoad() {
+        Data.shared.teamTurn = (Data.shared.teams.last?.id)!
+        turnLabel.text = String(format: "It's team %d turn!".localized(), Data.shared.teamTurn)
+        Data.shared.collectionWords.removeAll()
+        Data.shared.newCollectionWords.removeAll()
+        Data.shared.finalCollectionWords.removeAll()
         startTimer()
+        
     }
     override func didReceiveMemoryWarning() {
         

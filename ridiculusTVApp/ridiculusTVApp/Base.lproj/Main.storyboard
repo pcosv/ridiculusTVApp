@@ -359,7 +359,7 @@
                         <outlet property="thirdWord" destination="5EH-AP-Vf4" id="TQa-Q5-aer"/>
                         <outlet property="timerLabel" destination="MNh-ge-0yl" id="5dy-hs-Ri8"/>
                         <segue destination="pRb-gr-rxC" kind="show" identifier="endgamesegue" id="9Fj-1y-laO"/>
-                        <segue destination="QqM-8u-uBR" kind="show" identifier="nextroundsegue" id="Ifh-ws-LEz"/>
+                        <segue destination="Tiw-ti-tp8" kind="show" identifier="nextroundsegue" id="A6f-WO-s0d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -743,6 +743,7 @@
                         <viewLayoutGuide key="safeArea" id="ogH-sD-Jwc"/>
                     </view>
                     <connections>
+                        <outlet property="turnButtonLabel" destination="y6K-lU-jxK" id="2bq-PB-jA4"/>
                         <outlet property="turnLabel" destination="1AB-D7-Ls8" id="y3c-Lk-GKG"/>
                     </connections>
                 </viewController>
@@ -773,6 +774,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Its Team x turn!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9L-Fh-mHY">
+                                        <rect key="frame" x="573" y="68" width="774" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -781,6 +789,7 @@
                     </view>
                     <connections>
                         <outlet property="timerLabel" destination="uHX-D1-15z" id="U6V-E6-9hB"/>
+                        <outlet property="turnLabel" destination="g9L-Fh-mHY" id="RdH-mY-Uf0"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segue" id="v4s-s7-dod"/>
                     </connections>
                 </viewController>
@@ -804,8 +813,8 @@
         <image name="yellowPaperClipLeft" width="102" height="166"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ifh-ws-LEz"/>
-        <segue reference="UuE-kM-Ugs"/>
-        <segue reference="pDm-xl-atu"/>
+        <segue reference="yWe-Wv-8Ha"/>
+        <segue reference="f81-ef-LjV"/>
+        <segue reference="5iZ-sX-jb7"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,13 +10,11 @@ import UIKit
 
 class TurnViewController : UIViewController {
     @IBOutlet var turnLabel : UILabel!
+    @IBOutlet weak var turnButtonLabel: UIButton!
     
     override func viewDidLoad() {
         Data.shared.teamTurn = (Data.shared.teams.last?.id)!
         turnLabel.text = String(format: "It's team %d turn!".localized(), Data.shared.teamTurn)
-        Data.shared.collectionWords.removeAll()
-        Data.shared.newCollectionWords.removeAll()
-        Data.shared.finalCollectionWords.removeAll()
     }
     
     override func didReceiveMemoryWarning() {
