@@ -24,6 +24,10 @@
 		382DFAC6215C0D7700C6A6FE /* ConnectiPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DFAC5215C0D7700C6A6FE /* ConnectiPhoneViewController.m */; };
 		382DFAC9215C0DAB00C6A6FE /* MPCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DFAC8215C0DAB00C6A6FE /* MPCHandler.m */; };
 		386CF150215173BA00A14E3D /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CF14F215173BA00A14E3D /* CountdownViewController.swift */; };
+		3D589937215D72CC00BB1C62 /* slime.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D589936215D72CC00BB1C62 /* slime.json */; };
+		3D589939215D734A00BB1C62 /* FirstViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D589938215D734A00BB1C62 /* FirstViewViewController.swift */; };
+		3D58993B215D748F00BB1C62 /* hourglass.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D58993A215D748F00BB1C62 /* hourglass.json */; };
+		4791C90CBB341C0163FD3189 /* Pods_ridiculusTVApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA693157C842CAA7313214D /* Pods_ridiculusTVApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +69,12 @@
 		382DFAC7215C0DAB00C6A6FE /* MPCHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCHandler.h; sourceTree = "<group>"; };
 		382DFAC8215C0DAB00C6A6FE /* MPCHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCHandler.m; sourceTree = "<group>"; };
 		386CF14F215173BA00A14E3D /* CountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
+		3D589936215D72CC00BB1C62 /* slime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = slime.json; path = ../../../slime.json; sourceTree = "<group>"; };
+		3D589938215D734A00BB1C62 /* FirstViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewViewController.swift; sourceTree = "<group>"; };
+		3D58993A215D748F00BB1C62 /* hourglass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hourglass.json; path = ../../../hourglass.json; sourceTree = "<group>"; };
+		8AA693157C842CAA7313214D /* Pods_ridiculusTVApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ridiculusTVApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF2941520F1A7AD546F4D55 /* Pods-ridiculusTVApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridiculusTVApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridiculusTVApp/Pods-ridiculusTVApp.release.xcconfig"; sourceTree = "<group>"; };
+		E2E1D7E152DFAA2BABE6FFC0 /* Pods-ridiculusTVApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridiculusTVApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridiculusTVApp/Pods-ridiculusTVApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +82,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4791C90CBB341C0163FD3189 /* Pods_ridiculusTVApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0818CF162C7ED7D3BCCF816A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA693157C842CAA7313214D /* Pods_ridiculusTVApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		170A243F2151720000066C46 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +104,8 @@
 				170A244A2151720000066C46 /* ridiculusTVApp */,
 				170A24492151720000066C46 /* Products */,
 				2839543F215C1BCD00142717 /* Font Nunito */,
+				DD117C5DB8B26175813C4A10 /* Pods */,
+				0818CF162C7ED7D3BCCF816A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,8 @@
 		170A244A2151720000066C46 /* ridiculusTVApp */ = {
 			isa = PBXGroup;
 			children = (
+				3D589936215D72CC00BB1C62 /* slime.json */,
+				3D58993A215D748F00BB1C62 /* hourglass.json */,
 				17101DBE21597B040053F522 /* FC8A943F-A54D-44C0-95B6-6E33BFC966C9.png */,
 				170A244B2151720000066C46 /* AppDelegate.swift */,
 				382DFAC7215C0DAB00C6A6FE /* MPCHandler.h */,
@@ -115,6 +138,7 @@
 				17101DB5215438120053F522 /* TurnViewController.swift */,
 				170A244D2151720000066C46 /* GameViewController.swift */,
 				170A244F2151720000066C46 /* Main.storyboard */,
+				3D589938215D734A00BB1C62 /* FirstViewViewController.swift */,
 				171D0B2C215AD03100D3B440 /* CustomCollectionViewCell.swift */,
 				170A24522151720200066C46 /* Assets.xcassets */,
 				170A24542151720300066C46 /* Info.plist */,
@@ -144,6 +168,15 @@
 			path = "Font Nunito";
 			sourceTree = "<group>";
 		};
+		DD117C5DB8B26175813C4A10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2E1D7E152DFAA2BABE6FFC0 /* Pods-ridiculusTVApp.debug.xcconfig */,
+				AFF2941520F1A7AD546F4D55 /* Pods-ridiculusTVApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 170A24572151720300066C46 /* Build configuration list for PBXNativeTarget "ridiculusTVApp" */;
 			buildPhases = (
+				40671228EC597D63E674218E /* [CP] Check Pods Manifest.lock */,
 				170A24442151720000066C46 /* Sources */,
 				170A24452151720000066C46 /* Frameworks */,
 				170A24462151720000066C46 /* Resources */,
+				C0876FC8907071005A13622D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,7 +238,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D589937215D72CC00BB1C62 /* slime.json in Resources */,
 				170A24532151720200066C46 /* Assets.xcassets in Resources */,
+				3D58993B215D748F00BB1C62 /* hourglass.json in Resources */,
 				171D0B30215C203500D3B440 /* Localizable.strings in Resources */,
 				17101DBF21597B040053F522 /* FC8A943F-A54D-44C0-95B6-6E33BFC966C9.png in Resources */,
 				170A24512151720000066C46 /* Main.storyboard in Resources */,
@@ -212,11 +249,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40671228EC597D63E674218E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ridiculusTVApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0876FC8907071005A13622D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ridiculusTVApp/Pods-ridiculusTVApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ridiculusTVApp/Pods-ridiculusTVApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		170A24442151720000066C46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D589939215D734A00BB1C62 /* FirstViewViewController.swift in Sources */,
 				170A244E2151720000066C46 /* GameViewController.swift in Sources */,
 				17101DB6215438120053F522 /* TurnViewController.swift in Sources */,
 				382DFAC9215C0DAB00C6A6FE /* MPCHandler.m in Sources */,
@@ -373,6 +450,7 @@
 		};
 		170A24582151720300066C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E1D7E152DFAA2BABE6FFC0 /* Pods-ridiculusTVApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -396,6 +474,7 @@
 		};
 		170A24592151720300066C46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF2941520F1A7AD546F4D55 /* Pods-ridiculusTVApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
