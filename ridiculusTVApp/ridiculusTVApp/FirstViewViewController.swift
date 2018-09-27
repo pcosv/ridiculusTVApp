@@ -31,6 +31,7 @@ class FirstViewViewController: UIViewController, AVAudioPlayerDelegate {
         view.addSubview(slimeAnimationView)
         slimeAnimationView.play()
 
+
         // Do any additional setup after loading the view.
     }
 
