@@ -51,10 +51,10 @@
 "MNh-ge-0yl.text" = "1:30";
 
 /* Class = "UILabel"; text = "iphone is connected"; ObjectID = "N2J-9J-6ea"; */
-"N2J-9J-6ea.text" = "iphone is connected";
+"N2J-9J-6ea.text" = "yay! the iphone is connected";
 
 /* Class = "UILabel"; text = "players screen"; ObjectID = "NAq-vF-yn4"; */
-"NAq-vF-yn4.text" = "players screen";
+"NAq-vF-yn4.text" = "hello! how many players do we have here?";
 
 /* Class = "UILabel"; text = "Split in x teams of y players"; ObjectID = "O4b-k1-EC4"; */
 "O4b-k1-EC4.text" = "Split in x teams of y players";
@@ -69,7 +69,7 @@
 "QqM-8u-uBR.title" = "TurnView";
 
 /* Class = "UIButton"; normalTitle = "start"; ObjectID = "R6z-73-kce"; */
-"R6z-73-kce.normalTitle" = "start";
+"R6z-73-kce.normalTitle" = "continue";
 
 /* Class = "UIViewController"; title = "SplitView"; ObjectID = "REg-DN-YrI"; */
 "REg-DN-YrI.title" = "SplitView";
@@ -81,7 +81,7 @@
 "ZTA-t4-AUi.title" = "OptionsView";
 
 /* Class = "UIButton"; normalTitle = "start"; ObjectID = "aD3-EP-eKS"; */
-"aD3-EP-eKS.normalTitle" = "start";
+"aD3-EP-eKS.normalTitle" = "continue";
 
 /* Class = "UILabel"; text = "Language"; ObjectID = "aLS-vF-cyF"; */
 "aLS-vF-cyF.text" = "Language";
