@@ -84,25 +84,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aD3-EP-eKS">
-                                        <rect key="frame" x="771" y="650" width="379" height="173"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yay! the iphone is connected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2J-9J-6ea">
+                                        <rect key="frame" x="499" y="655" width="896" height="99"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="72"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PinkIphone" translatesAutoresizingMaskIntoConstraints="NO" id="PpH-I3-9p1">
+                                        <rect key="frame" x="827" y="326" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aD3-EP-eKS">
+                                        <rect key="frame" x="545" y="786" width="833" height="158"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="72"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="start"/>
+                                        <state key="normal" title="continue" backgroundImage="PinkButton"/>
                                         <connections>
                                             <segue destination="hZ7-Zq-zhg" kind="show" id="UuE-kM-Ugs"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iphone is connected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2J-9J-6ea">
-                                        <rect key="frame" x="398" y="375" width="1124" height="145"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="124"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.070588235289999995" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qRw-NP-59d"/>
@@ -129,7 +133,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-Ai-Buu">
-                                        <rect key="frame" x="771" y="650" width="379" height="173"/>
+                                        <rect key="frame" x="771" y="839" width="379" height="173"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
@@ -138,15 +142,19 @@
                                             <segue destination="DnI-2W-udp" kind="show" id="Day-mI-K1C"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="connect your iphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUy-BT-xiY">
-                                        <rect key="frame" x="398" y="375" width="1137" height="145"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="before you start, connect an iPhone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUy-BT-xiY">
+                                        <rect key="frame" x="367" y="745" width="1119" height="99"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="124"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="72"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YellowIphone" translatesAutoresizingMaskIntoConstraints="NO" id="Hts-vu-yba">
+                                        <rect key="frame" x="840" y="396" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.070588235289999995" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Net-Ee-lKA"/>
@@ -584,12 +592,12 @@
                                                     <rect key="frame" x="1523" y="37" width="72" height="123"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YellowPaperClip" translatesAutoresizingMaskIntoConstraints="NO" id="rZi-vc-SrP">
-                                                    <rect key="frame" x="177" y="37" width="96" height="169"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkPaperClipLeft" translatesAutoresizingMaskIntoConstraints="NO" id="FPk-UC-GAS">
+                                                    <rect key="frame" x="191" y="53" width="73" height="127"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PinkPaperClip" translatesAutoresizingMaskIntoConstraints="NO" id="FPk-UC-GAS">
-                                                    <rect key="frame" x="201" y="37" width="72" height="123"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yellowPaperClipLeft" translatesAutoresizingMaskIntoConstraints="NO" id="rZi-vc-SrP">
+                                                    <rect key="frame" x="191" y="50" width="96" height="169"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -627,14 +635,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="players screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAq-vF-yn4">
-                                        <rect key="frame" x="558" y="182" width="804" height="145"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="124"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="36" translatesAutoresizingMaskIntoConstraints="NO" id="Ecg-1Y-RSR">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="36" background="NumberView" disabledBackground="NumberView" translatesAutoresizingMaskIntoConstraints="NO" id="Ecg-1Y-RSR">
                                         <rect key="frame" x="898" y="481" width="124" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -652,8 +653,15 @@
                                             <action selector="continueButton:" destination="hZ7-Zq-zhg" eventType="primaryActionTriggered" id="6zx-D5-AZm"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hello! how many players do we have here?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAq-vF-yn4">
+                                        <rect key="frame" x="292" y="333" width="1337" height="99"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="72"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.070588235289999995" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pDk-RF-aGN"/>
@@ -802,13 +810,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NumberView" width="342" height="202"/>
         <image name="PinkButton" width="833" height="158"/>
+        <image name="PinkIphone" width="316" height="438"/>
         <image name="PinkPaperClip" width="72" height="127"/>
         <image name="PlayButton" width="841" height="168"/>
         <image name="PurplePaper" width="1519" height="823"/>
         <image name="RidiculusLogo" width="1003" height="266"/>
         <image name="SettingsButton" width="120" height="115"/>
+        <image name="YellowIphone" width="315" height="440"/>
         <image name="YellowPaperClip" width="96" height="169"/>
+        <image name="pinkPaperClipLeft" width="79" height="124"/>
+        <image name="yellowPaperClipLeft" width="102" height="166"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="v4s-s7-dod"/>
