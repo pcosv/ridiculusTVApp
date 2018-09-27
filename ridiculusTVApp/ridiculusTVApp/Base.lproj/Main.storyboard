@@ -34,12 +34,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFI-pv-YKf">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="left" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFI-pv-YKf">
                                         <rect key="frame" x="548" y="771" width="841" height="168"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="72"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="play" backgroundImage="PlayButton"/>
+                                        <state key="focused" backgroundImage="playButtonSelected"/>
                                         <connections>
                                             <segue destination="OKq-8f-RaX" kind="show" id="7kE-dw-rKX"/>
                                         </connections>
@@ -810,6 +811,7 @@
         <image name="YellowIphone" width="315" height="440"/>
         <image name="YellowPaperClip" width="96" height="169"/>
         <image name="pinkPaperClipLeft" width="79" height="124"/>
+        <image name="playButtonSelected" width="973" height="194"/>
         <image name="yellowPaperClipLeft" width="102" height="166"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -14,14 +14,14 @@ class FirstViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let slimeAnimationView = LOTAnimationView(name: "gosma")
-        slimeAnimationView.frame = CGRect(x: 0, y: 0, width: 1920, height: 980)
-        slimeAnimationView.contentMode = .scaleAspectFill
-        slimeAnimationView.loopAnimation = true
-        
-        view.addSubview(slimeAnimationView)
-        slimeAnimationView.play()
-        
+//        let slimeAnimationView = LOTAnimationView(name: "gosma")
+//        slimeAnimationView.frame = CGRect(x: 0, y: 0, width: 1920, height: 980)
+//        slimeAnimationView.contentMode = .scaleAspectFill
+//        slimeAnimationView.loopAnimation = true
+//        
+//        view.addSubview(slimeAnimationView)
+//        slimeAnimationView.play()
+//        
 
         // Do any additional setup after loading the view.
     }
