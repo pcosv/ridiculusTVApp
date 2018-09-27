@@ -21,7 +21,7 @@
         <!--FirstView-->
         <scene sceneID="kgC-JN-ZPj">
             <objects>
-                <viewController title="FirstView" id="J1G-Oa-hK9" sceneMemberID="viewController">
+                <viewController title="FirstView" id="J1G-Oa-hK9" customClass="FirstViewViewController" customModule="ridiculusTVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8q2-C8-HhF"/>
                         <viewControllerLayoutGuide type="bottom" id="uwY-CP-8TD"/>
