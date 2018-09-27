@@ -19,6 +19,8 @@
 		171D0B30215C203500D3B440 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 171D0B32215C203500D3B440 /* Localizable.strings */; };
 		171D0B35215D765400D3B440 /* gosma.json in Resources */ = {isa = PBXBuildFile; fileRef = 171D0B33215D765400D3B440 /* gosma.json */; };
 		171D0B36215D765400D3B440 /* hourglass.json in Resources */ = {isa = PBXBuildFile; fileRef = 171D0B34215D765400D3B440 /* hourglass.json */; };
+		171D0B38215D800800D3B440 /* ridiculusmusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 171D0B37215D800800D3B440 /* ridiculusmusic.wav */; };
+		171D0B3A215D820100D3B440 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 171D0B39215D820100D3B440 /* AVFoundation.framework */; };
 		173092272151878700258E66 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173092262151878700258E66 /* Team.swift */; };
 		1730922921518DEF00258E66 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730922821518DEF00258E66 /* Data.swift */; };
 		1730922B21540FE900258E66 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730922A21540FE900258E66 /* PlayersViewController.swift */; };
@@ -47,6 +49,8 @@
 		171D0B31215C203500D3B440 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		171D0B33215D765400D3B440 /* gosma.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gosma.json; sourceTree = "<group>"; };
 		171D0B34215D765400D3B440 /* hourglass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hourglass.json; sourceTree = "<group>"; };
+		171D0B37215D800800D3B440 /* ridiculusmusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ridiculusmusic.wav; sourceTree = "<group>"; };
+		171D0B39215D820100D3B440 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		173092262151878700258E66 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		1730922821518DEF00258E66 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1730922A21540FE900258E66 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171D0B3A215D820100D3B440 /* AVFoundation.framework in Frameworks */,
 				4791C90CBB341C0163FD3189 /* Pods_ridiculusTVApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +97,7 @@
 		0818CF162C7ED7D3BCCF816A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				171D0B39215D820100D3B440 /* AVFoundation.framework */,
 				8AA693157C842CAA7313214D /* Pods_ridiculusTVApp.framework */,
 			);
 			name = Frameworks;
@@ -122,6 +128,7 @@
 			children = (
 				171D0B33215D765400D3B440 /* gosma.json */,
 				171D0B34215D765400D3B440 /* hourglass.json */,
+				171D0B37215D800800D3B440 /* ridiculusmusic.wav */,
 				17101DBE21597B040053F522 /* FC8A943F-A54D-44C0-95B6-6E33BFC966C9.png */,
 				170A244B2151720000066C46 /* AppDelegate.swift */,
 				382DFAC7215C0DAB00C6A6FE /* MPCHandler.h */,
@@ -243,6 +250,7 @@
 				171D0B36215D765400D3B440 /* hourglass.json in Resources */,
 				17101DBF21597B040053F522 /* FC8A943F-A54D-44C0-95B6-6E33BFC966C9.png in Resources */,
 				171D0B35215D765400D3B440 /* gosma.json in Resources */,
+				171D0B38215D800800D3B440 /* ridiculusmusic.wav in Resources */,
 				170A24512151720000066C46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
