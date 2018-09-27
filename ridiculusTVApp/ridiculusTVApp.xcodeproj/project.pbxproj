@@ -17,6 +17,8 @@
 		17101DC121597D2B0053F522 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17101DC021597D2B0053F522 /* OptionsViewController.swift */; };
 		171D0B2D215AD03100D3B440 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171D0B2C215AD03100D3B440 /* CustomCollectionViewCell.swift */; };
 		171D0B30215C203500D3B440 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 171D0B32215C203500D3B440 /* Localizable.strings */; };
+		171D0B35215D765400D3B440 /* gosma.json in Resources */ = {isa = PBXBuildFile; fileRef = 171D0B33215D765400D3B440 /* gosma.json */; };
+		171D0B36215D765400D3B440 /* hourglass.json in Resources */ = {isa = PBXBuildFile; fileRef = 171D0B34215D765400D3B440 /* hourglass.json */; };
 		173092272151878700258E66 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173092262151878700258E66 /* Team.swift */; };
 		1730922921518DEF00258E66 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730922821518DEF00258E66 /* Data.swift */; };
 		1730922B21540FE900258E66 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730922A21540FE900258E66 /* PlayersViewController.swift */; };
@@ -24,9 +26,7 @@
 		382DFAC6215C0D7700C6A6FE /* ConnectiPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DFAC5215C0D7700C6A6FE /* ConnectiPhoneViewController.m */; };
 		382DFAC9215C0DAB00C6A6FE /* MPCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DFAC8215C0DAB00C6A6FE /* MPCHandler.m */; };
 		386CF150215173BA00A14E3D /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CF14F215173BA00A14E3D /* CountdownViewController.swift */; };
-		3D589937215D72CC00BB1C62 /* slime.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D589936215D72CC00BB1C62 /* slime.json */; };
 		3D589939215D734A00BB1C62 /* FirstViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D589938215D734A00BB1C62 /* FirstViewViewController.swift */; };
-		3D58993B215D748F00BB1C62 /* hourglass.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D58993A215D748F00BB1C62 /* hourglass.json */; };
 		4791C90CBB341C0163FD3189 /* Pods_ridiculusTVApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA693157C842CAA7313214D /* Pods_ridiculusTVApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +45,8 @@
 		17101DC021597D2B0053F522 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		171D0B2C215AD03100D3B440 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		171D0B31215C203500D3B440 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		171D0B33215D765400D3B440 /* gosma.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gosma.json; sourceTree = "<group>"; };
+		171D0B34215D765400D3B440 /* hourglass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hourglass.json; sourceTree = "<group>"; };
 		173092262151878700258E66 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		1730922821518DEF00258E66 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1730922A21540FE900258E66 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
@@ -69,9 +71,7 @@
 		382DFAC7215C0DAB00C6A6FE /* MPCHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCHandler.h; sourceTree = "<group>"; };
 		382DFAC8215C0DAB00C6A6FE /* MPCHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCHandler.m; sourceTree = "<group>"; };
 		386CF14F215173BA00A14E3D /* CountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
-		3D589936215D72CC00BB1C62 /* slime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = slime.json; path = ../../../slime.json; sourceTree = "<group>"; };
 		3D589938215D734A00BB1C62 /* FirstViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewViewController.swift; sourceTree = "<group>"; };
-		3D58993A215D748F00BB1C62 /* hourglass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hourglass.json; path = ../../../hourglass.json; sourceTree = "<group>"; };
 		8AA693157C842CAA7313214D /* Pods_ridiculusTVApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ridiculusTVApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF2941520F1A7AD546F4D55 /* Pods-ridiculusTVApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridiculusTVApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridiculusTVApp/Pods-ridiculusTVApp.release.xcconfig"; sourceTree = "<group>"; };
 		E2E1D7E152DFAA2BABE6FFC0 /* Pods-ridiculusTVApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridiculusTVApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridiculusTVApp/Pods-ridiculusTVApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,8 +120,8 @@
 		170A244A2151720000066C46 /* ridiculusTVApp */ = {
 			isa = PBXGroup;
 			children = (
-				3D589936215D72CC00BB1C62 /* slime.json */,
-				3D58993A215D748F00BB1C62 /* hourglass.json */,
+				171D0B33215D765400D3B440 /* gosma.json */,
+				171D0B34215D765400D3B440 /* hourglass.json */,
 				17101DBE21597B040053F522 /* FC8A943F-A54D-44C0-95B6-6E33BFC966C9.png */,
 				170A244B2151720000066C46 /* AppDelegate.swift */,
 				382DFAC7215C0DAB00C6A6FE /* MPCHandler.h */,
@@ -238,11 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D589937215D72CC00BB1C62 /* slime.json in Resources */,
 				170A24532151720200066C46 /* Assets.xcassets in Resources */,
-				3D58993B215D748F00BB1C62 /* hourglass.json in Resources */,
 				171D0B30215C203500D3B440 /* Localizable.strings in Resources */,
+				171D0B36215D765400D3B440 /* hourglass.json in Resources */,
 				17101DBF21597B040053F522 /* FC8A943F-A54D-44C0-95B6-6E33BFC966C9.png in Resources */,
+				171D0B35215D765400D3B440 /* gosma.json in Resources */,
 				170A24512151720000066C46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
