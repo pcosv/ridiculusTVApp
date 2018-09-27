@@ -10,11 +10,10 @@ import UIKit
 
 class TurnViewController : UIViewController {
     @IBOutlet var turnLabel : UILabel!
-    var teamTurn = 0
     
     override func viewDidLoad() {
-        teamTurn = (Data.shared.teams.last?.id)!
-        turnLabel.text = String(format: "It's team %d turn!".localized(), teamTurn)
+        Data.shared.teamTurn = (Data.shared.teams.last?.id)!
+        turnLabel.text = String(format: "It's team %d turn!".localized(), Data.shared.teamTurn)
         Data.shared.collectionWords.removeAll()
         Data.shared.newCollectionWords.removeAll()
         Data.shared.finalCollectionWords.removeAll()
