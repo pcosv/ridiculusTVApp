@@ -67,7 +67,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.laughOMeter.layer.cornerRadius = 30
         self.appDelegate = UIApplication.shared.delegate as? AppDelegate
         
         // recebendo dados do iphone
@@ -101,10 +101,19 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         var message: String? = nil
         if let aData = receivedData {
             message = String(data: aData, encoding: .utf8)
-            print(message)
-            // na primeira posição do array vai vir o numero do time vencedor
-            // na segunda posição do array vai vir o score do time vencedor
-            Data.shared.winner.append(message!)
+            
+            if let message = message, message.prefix(1) == "r" {
+                let aux = message.count
+                let laughValue = message.suffix(aux - 1)
+                UIView.animate(withDuration: 0.4) {
+                    self.laughOMeter.frame.size.width = CGFloat((Int(laughValue)!)*10)
+                }
+            } else{
+                print(message)
+                // na primeira posição do array vai vir o numero do time vencedor
+                // na segunda posição do array vai vir o score do time vencedor
+                Data.shared.winner.append(message!)
+            }
         }
     }
         
