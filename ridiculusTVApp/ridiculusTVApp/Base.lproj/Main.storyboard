@@ -136,22 +136,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-Ai-Buu">
-                                        <rect key="frame" x="771" y="839" width="379" height="173"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-Ai-Buu">
+                                        <rect key="frame" x="545" y="786" width="833" height="158"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                        <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="72"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="start"/>
+                                        <state key="normal" title="start" backgroundImage="PinkButton"/>
                                         <connections>
                                             <segue destination="DnI-2W-udp" kind="show" id="Day-mI-K1C"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YellowIphone" translatesAutoresizingMaskIntoConstraints="NO" id="Hts-vu-yba">
-                                        <rect key="frame" x="840" y="396" width="240" height="128"/>
+                                        <rect key="frame" x="827" y="326" width="240" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="before you start, connect an iPhone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUy-BT-xiY">
-                                        <rect key="frame" x="250" y="732" width="1420" height="99"/>
+                                        <rect key="frame" x="251" y="655" width="1420" height="99"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="72"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -166,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FR3-cL-j2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2199" y="1411"/>
+            <point key="canvasLocation" x="-3125" y="1784"/>
         </scene>
         <!--GameView-->
         <scene sceneID="tne-QT-ifu">
@@ -860,7 +860,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="A6f-WO-s0d"/>
-        <segue reference="f81-ef-LjV"/>
+        <segue reference="UuE-kM-Ugs"/>
         <segue reference="5iZ-sX-jb7"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
