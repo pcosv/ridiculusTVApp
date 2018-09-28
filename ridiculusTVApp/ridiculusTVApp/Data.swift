@@ -30,5 +30,8 @@ class Data {
     var finalCollectionWords : [Word] = []
     
     static var shared = Data()
+    
+    var numberOfTeams = 0
+
 }
 

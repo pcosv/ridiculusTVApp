@@ -761,6 +761,7 @@
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="improvise" backgroundImage="PinkButton"/>
                                         <connections>
+                                            <action selector="startGame:" destination="QqM-8u-uBR" eventType="primaryActionTriggered" id="Hfp-D7-DAU"/>
                                             <segue destination="Tiw-ti-tp8" kind="show" id="yWe-Wv-8Ha"/>
                                         </connections>
                                     </button>
@@ -864,7 +865,6 @@
         <image name="yellowPaperClipLeft" width="102" height="166"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v4s-s7-dod"/>
         <segue reference="yWe-Wv-8Ha"/>
         <segue reference="f81-ef-LjV"/>
         <segue reference="5iZ-sX-jb7"/>
