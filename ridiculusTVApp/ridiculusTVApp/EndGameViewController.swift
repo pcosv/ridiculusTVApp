@@ -11,15 +11,15 @@ import UIKit
 class EngdGameViewController : UIViewController {
     
     @IBOutlet var labelWinner : UILabel!
-    @IBOutlet var labelLoser : UILabel!
     @IBOutlet var pointsWinner : UILabel!
-    @IBOutlet var pointsLoser : UILabel!
     @IBOutlet weak var duckWinner: UIImageView!
-    @IBOutlet weak var duckLoser: UIImageView!
-    
     
     override func viewDidLoad() {
-        
+        labelWinner.text = String(format: "Team %d".localized(), Data.shared.winner[0])
+        pointsWinner.text = String(format: "%d points".localized(), Data.shared.winner[1])
+        if Data.shared.winner[0] == "1" {
+            duckWinner.image = UIImage(named: "BlueDuck")
+        }
     }
     override func didReceiveMemoryWarning() {
         

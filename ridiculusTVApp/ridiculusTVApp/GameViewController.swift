@@ -11,7 +11,13 @@ import UIKit
 class GameViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var appDelegate: AppDelegate?
-
+    var fundos1 = [UIImage(named: "JellyRight"),UIImage(named: "JellyMiddle"),UIImage(named: "JellyLeft")]
+    var fundos2 = [UIImage(named: "PurpleBlobRight"),UIImage(named: "PurpleBlobMiddle"),UIImage(named: "PurpleBlobLeft")]
+    var fundos3 = [UIImage(named: "DarkPurpleBlobRight"),UIImage(named: "DarkPurpleBlobMiddle"),UIImage(named: "DarkPurpleBlobLeft")]
+    
+    
+    
+    @IBOutlet weak var duckLabel: UIImageView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == collectionView1 {
@@ -30,15 +36,20 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         if collectionView == collectionView1 {
             let cella = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCollectionViewCell
             cella.collectionViewLabel.text = Data.shared.collectionWords[indexPath.row].name.localized()
+            cella.bgImage.image = fundos1[indexPath.row]
             return cella
         }
         if collectionView == collectionView2 {
             let cellb = collectionView.dequeueReusableCell(withReuseIdentifier: "cella", for: indexPath) as! CustomCollectionViewCell
             cellb.collectionViewLabel.text = Data.shared.newCollectionWords[indexPath.row].name.localized()
+            cellb.bgImage.image = fundos2[indexPath.row]
+
             return cellb
         } else {
             let cellc = collectionView.dequeueReusableCell(withReuseIdentifier: "cellb", for: indexPath) as! CustomCollectionViewCell
             cellc.collectionViewLabel.text = Data.shared.finalCollectionWords[indexPath.row].name.localized()
+            cellc.bgImage.image = fundos3[indexPath.row]
+
             return cellc
         }
     }
@@ -53,7 +64,6 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var collectionView2: UICollectionView!
     @IBOutlet weak var collectionView3: UICollectionView!
     
-    var winner: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +77,9 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
                                        name: NSNotification.Name(rawValue: "MPCDemo_DidReceiveDataNotification"),
                                        object: nil)
        
-
+        if Data.shared.teamTurn == 1 {
+            duckLabel.image = UIImage(named: "BlueDuck")
+        }
         changeWord(firstWord)
         changeWord(secondWord)
         changeWord(thirdWord)
@@ -92,7 +104,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
             print(message)
             // na primeira posição do array vai vir o numero do time vencedor
             // na segunda posição do array vai vir o score do time vencedor
-            winner.append(message!)
+            Data.shared.winner.append(message!)
         }
     }
         

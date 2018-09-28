@@ -24,7 +24,7 @@ class Data {
     var teams : [Team] = []
     var teamsDone : [Team] = []
     var teamTurn = 0
-
+    var winner: [String] = []
     var collectionWords : [Word] = []
     var newCollectionWords : [Word] = []
     var finalCollectionWords : [Word] = []

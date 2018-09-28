@@ -9,4 +9,5 @@
 import UIKit
 class CustomCollectionViewCell : UICollectionViewCell {
     @IBOutlet var collectionViewLabel: UILabel!
+    @IBOutlet weak var bgImage: UIImageView!
 }
