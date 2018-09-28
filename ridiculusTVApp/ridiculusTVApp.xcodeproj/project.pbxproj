@@ -12,6 +12,20 @@
 		170A24512151720000066C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170A244F2151720000066C46 /* Main.storyboard */; };
 		170A24532151720200066C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170A24522151720200066C46 /* Assets.xcassets */; };
 		170A245B2151752500066C46 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A245A2151752500066C46 /* Word.swift */; };
+		170E2CAE215E6EE400E05BF3 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28395445215C1BE700142717 /* Nunito-Black.ttf */; };
+		170E2CAF215E6EE600E05BF3 /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28395449215C1BE700142717 /* Nunito-BlackItalic.ttf */; };
+		170E2CB0215E6EEC00E05BF3 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28395446215C1BE700142717 /* Nunito-Bold.ttf */; };
+		170E2CB1215E6EEE00E05BF3 /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2839544A215C1BE800142717 /* Nunito-BoldItalic.ttf */; };
+		170E2CB2215E6EF100E05BF3 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28395444215C1BE700142717 /* Nunito-ExtraBold.ttf */; };
+		170E2CB3215E6EF300E05BF3 /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28395447215C1BE700142717 /* Nunito-ExtraBoldItalic.ttf */; };
+		170E2CB4215E6EF600E05BF3 /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2839544B215C1BE800142717 /* Nunito-ExtraLight.ttf */; };
+		170E2CB5215E6EF800E05BF3 /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28395448215C1BE700142717 /* Nunito-ExtraLightItalic.ttf */; };
+		170E2CB6215E6EFB00E05BF3 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2839544D215C1BE800142717 /* Nunito-Italic.ttf */; };
+		170E2CB7215E6EFD00E05BF3 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28395442215C1BE600142717 /* Nunito-Light.ttf */; };
+		170E2CB8215E6F0000E05BF3 /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2839544C215C1BE800142717 /* Nunito-LightItalic.ttf */; };
+		170E2CB9215E6F0200E05BF3 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28395443215C1BE600142717 /* Nunito-Regular.ttf */; };
+		170E2CBA215E6F0500E05BF3 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28395440215C1BE000142717 /* Nunito-SemiBold.ttf */; };
+		170E2CBB215E6F0700E05BF3 /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28395441215C1BE000142717 /* Nunito-SemiBoldItalic.ttf */; };
 		17101DB6215438120053F522 /* TurnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17101DB5215438120053F522 /* TurnViewController.swift */; };
 		17101DBF21597B040053F522 /* FC8A943F-A54D-44C0-95B6-6E33BFC966C9.png in Resources */ = {isa = PBXBuildFile; fileRef = 17101DBE21597B040053F522 /* FC8A943F-A54D-44C0-95B6-6E33BFC966C9.png */; };
 		17101DC121597D2B0053F522 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17101DC021597D2B0053F522 /* OptionsViewController.swift */; };
@@ -25,6 +39,7 @@
 		1730922921518DEF00258E66 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730922821518DEF00258E66 /* Data.swift */; };
 		1730922B21540FE900258E66 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1730922A21540FE900258E66 /* PlayersViewController.swift */; };
 		175C531F21542592006720AE /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175C531E21542592006720AE /* SplitViewController.swift */; };
+		17D00814215E667F00E4B587 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D00813215E667F00E4B587 /* EndGameViewController.swift */; };
 		382DFAC6215C0D7700C6A6FE /* ConnectiPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DFAC5215C0D7700C6A6FE /* ConnectiPhoneViewController.m */; };
 		382DFAC9215C0DAB00C6A6FE /* MPCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 382DFAC8215C0DAB00C6A6FE /* MPCHandler.m */; };
 		386CF150215173BA00A14E3D /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386CF14F215173BA00A14E3D /* CountdownViewController.swift */; };
@@ -55,6 +70,7 @@
 		1730922821518DEF00258E66 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1730922A21540FE900258E66 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		175C531E21542592006720AE /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		17D00813215E667F00E4B587 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		28395440215C1BE000142717 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		28395441215C1BE000142717 /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		28395442215C1BE600142717 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
@@ -145,6 +161,7 @@
 				17101DB5215438120053F522 /* TurnViewController.swift */,
 				170A244D2151720000066C46 /* GameViewController.swift */,
 				170A244F2151720000066C46 /* Main.storyboard */,
+				17D00813215E667F00E4B587 /* EndGameViewController.swift */,
 				3D589938215D734A00BB1C62 /* FirstViewViewController.swift */,
 				171D0B2C215AD03100D3B440 /* CustomCollectionViewCell.swift */,
 				170A24522151720200066C46 /* Assets.xcassets */,
@@ -246,11 +263,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				170A24532151720200066C46 /* Assets.xcassets in Resources */,
+				170E2CB5215E6EF800E05BF3 /* Nunito-ExtraLightItalic.ttf in Resources */,
+				170E2CB4215E6EF600E05BF3 /* Nunito-ExtraLight.ttf in Resources */,
+				170E2CB9215E6F0200E05BF3 /* Nunito-Regular.ttf in Resources */,
+				170E2CBA215E6F0500E05BF3 /* Nunito-SemiBold.ttf in Resources */,
+				170E2CAF215E6EE600E05BF3 /* Nunito-BlackItalic.ttf in Resources */,
+				170E2CB8215E6F0000E05BF3 /* Nunito-LightItalic.ttf in Resources */,
 				171D0B30215C203500D3B440 /* Localizable.strings in Resources */,
+				170E2CB2215E6EF100E05BF3 /* Nunito-ExtraBold.ttf in Resources */,
+				170E2CB1215E6EEE00E05BF3 /* Nunito-BoldItalic.ttf in Resources */,
 				171D0B36215D765400D3B440 /* hourglass.json in Resources */,
+				170E2CAE215E6EE400E05BF3 /* Nunito-Black.ttf in Resources */,
 				17101DBF21597B040053F522 /* FC8A943F-A54D-44C0-95B6-6E33BFC966C9.png in Resources */,
+				170E2CB0215E6EEC00E05BF3 /* Nunito-Bold.ttf in Resources */,
 				171D0B35215D765400D3B440 /* gosma.json in Resources */,
+				170E2CBB215E6F0700E05BF3 /* Nunito-SemiBoldItalic.ttf in Resources */,
+				170E2CB3215E6EF300E05BF3 /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				170E2CB6215E6EFB00E05BF3 /* Nunito-Italic.ttf in Resources */,
 				171D0B38215D800800D3B440 /* ridiculusmusic.wav in Resources */,
+				170E2CB7215E6EFD00E05BF3 /* Nunito-Light.ttf in Resources */,
 				170A24512151720000066C46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +334,7 @@
 			files = (
 				3D589939215D734A00BB1C62 /* FirstViewViewController.swift in Sources */,
 				170A244E2151720000066C46 /* GameViewController.swift in Sources */,
+				17D00814215E667F00E4B587 /* EndGameViewController.swift in Sources */,
 				17101DB6215438120053F522 /* TurnViewController.swift in Sources */,
 				382DFAC9215C0DAB00C6A6FE /* MPCHandler.m in Sources */,
 				1730922B21540FE900258E66 /* PlayersViewController.swift in Sources */,

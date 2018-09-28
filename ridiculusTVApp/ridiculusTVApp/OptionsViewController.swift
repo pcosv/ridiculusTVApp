@@ -25,7 +25,7 @@ class OptionsViewController: UIViewController {
     }
     @IBAction func changeLanguage(_ sender: Any) {
         if languageOutlet.text == "English" || languageOutlet.text == "Inglês" {
-            languageOutlet.text = "Portuguese"
+            languageOutlet.text = "Português"
         } else {
             languageOutlet.text = "English"
         }
