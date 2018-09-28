@@ -26,6 +26,7 @@ class PlayersViewController : UIViewController {
             } else if players <= 7 {
                 //dois times
                 teamNumber = 2
+                Data.shared.numberOfTeams = teamNumber
                 while teamNumber > 0 {
                   Data.shared.teams.append(Team(score: 0, id: teamNumber))
                     teamNumber -= 1
@@ -37,6 +38,8 @@ class PlayersViewController : UIViewController {
                 if players%3 >= 2 {
                     teamNumber+=1
                 }
+                Data.shared.numberOfTeams = teamNumber
+
                 while teamNumber > 0 {
                     Data.shared.teams.append(Team(score: 0, id: teamNumber))
                     teamNumber -= 1

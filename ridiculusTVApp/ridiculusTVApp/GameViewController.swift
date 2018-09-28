@@ -10,6 +10,9 @@ import UIKit
 
 class GameViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    var appDelegate: AppDelegate?
+
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == collectionView1 {
             return Data.shared.collectionWords.count
@@ -44,6 +47,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var firstWord: UILabel!
     @IBOutlet weak var secondWord: UILabel!
     @IBOutlet weak var thirdWord: UILabel!
+    @IBOutlet weak var laughOMeter: UIView!
     
     @IBOutlet weak var collectionView1: UICollectionView!
     @IBOutlet weak var collectionView2: UICollectionView!
@@ -51,6 +55,17 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.appDelegate = UIApplication.shared.delegate as? AppDelegate
+        
+        // recebendo dados do iphone
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self,
+                                       selector: #selector(handleReceivedDataWithNotification),
+                                       name: NSNotification.Name(rawValue: "MPCDemo_DidReceiveDataNotification"),
+                                       object: nil)
+       
+
         changeWord(firstWord)
         changeWord(secondWord)
         changeWord(thirdWord)
@@ -61,6 +76,31 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.collectionView2.dataSource = self
         self.collectionView3.delegate = self
         self.collectionView3.dataSource = self
+    }
+    
+    @objc func handleReceivedDataWithNotification(notification: NSNotification) {
+//        // Get the user info dictionary that was received along with the notification.
+//        var userInfoDict = notification.userInfo
+//
+//        // Convert the received data into a NSString object.
+//        var receivedData = userInfoDict.
+//        //var receivedData = [userInfoDict objectForKey:@"data"];
+//        NSString *message = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+//
+//
+//        if ([message isEqualToString:@"New Game"]) {
+//            NSLog(@"%@", message);
+//            [self performSegueWithIdentifier:@"setMicToListen" sender:self];
+//            NSLog(@"foi pra outra tela");
+//        } else {
+//            // determina numero de times
+//            NSLog(@"%@", message);
+//            int b = [message intValue];
+//            NSLog(@"numero de times %d", b);
+//
+//            self.numberOfTeams = b;
+//
+//        }
     }
 
     override func didReceiveMemoryWarning() {
