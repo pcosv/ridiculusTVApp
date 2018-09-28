@@ -53,6 +53,8 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var collectionView2: UICollectionView!
     @IBOutlet weak var collectionView3: UICollectionView!
     
+    var winner: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -78,31 +80,23 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.collectionView3.dataSource = self
     }
     
-    @objc func handleReceivedDataWithNotification(notification: NSNotification) {
-//        // Get the user info dictionary that was received along with the notification.
-//        var userInfoDict = notification.userInfo
-//
-//        // Convert the received data into a NSString object.
-//        var receivedData = userInfoDict.
-//        //var receivedData = [userInfoDict objectForKey:@"data"];
-//        NSString *message = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
-//
-//
-//        if ([message isEqualToString:@"New Game"]) {
-//            NSLog(@"%@", message);
-//            [self performSegueWithIdentifier:@"setMicToListen" sender:self];
-//            NSLog(@"foi pra outra tela");
-//        } else {
-//            // determina numero de times
-//            NSLog(@"%@", message);
-//            int b = [message intValue];
-//            NSLog(@"numero de times %d", b);
-//
-//            self.numberOfTeams = b;
-//
-//        }
+    @objc func handleReceivedDataWithNotification(with notification: Notification?) {
+        // Get the user info dictionary that was received along with the notification.
+        let userInfoDict = notification?.userInfo
+        
+        // Convert the received data into a NSString object.
+        let receivedData = userInfoDict?["data"] as? Foundation.Data
+        var message: String? = nil
+        if let aData = receivedData {
+            message = String(data: aData, encoding: .utf8)
+            print(message)
+            // na primeira posição do array vai vir o numero do time vencedor
+            // na segunda posição do array vai vir o score do time vencedor
+            winner.append(message!)
+        }
     }
-
+        
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
