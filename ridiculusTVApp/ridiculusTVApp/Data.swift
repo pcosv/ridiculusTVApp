@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import CoreData
+import AVFoundation
 
 class Data {
     var noun : [Word] = [Word(name: "Xuxa", type: "noun"),Word(name: "Obama", type: "noun"),Word(name: "Teacher", type: "noun"),Word(name: "Britney", type: "noun"),Word(name: "Lula", type: "noun"),Word(name: "castor", type: "noun"),Word(name: "Eliete", type: "noun"),Word(name: "Francisco", type: "noun"),Word(name: "Brownie", type: "noun")]
@@ -31,6 +32,8 @@ class Data {
     
     static var shared = Data()
     
+    var player:AVAudioPlayer?
+
     var numberOfTeams = 0
 
 }

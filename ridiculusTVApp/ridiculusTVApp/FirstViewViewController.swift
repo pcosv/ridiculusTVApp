@@ -12,14 +12,10 @@ import AVFoundation
 
 class FirstViewViewController: UIViewController, AVAudioPlayerDelegate {
     
-    var player:AVAudioPlayer = AVAudioPlayer()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        do {
-//            let audioPlayer = Bundle.main.path(forResource: "", ofType: "")
-//        }
+        initialSong()
         
         let slimeAnimationView = LOTAnimationView(name: "gosma")
         slimeAnimationView.frame = CGRect(x: 0, y: 0, width: 1920, height: 980)
@@ -33,6 +29,19 @@ class FirstViewViewController: UIViewController, AVAudioPlayerDelegate {
 
 
         // Do any additional setup after loading the view.
+    }
+    
+    func initialSong() {
+        let filePath = Bundle.main.path(forResource: "ridiculusmusic", ofType: "wav")
+        let audioURL = URL(fileURLWithPath: filePath!)
+        do{
+            Data.shared.player = try AVAudioPlayer(contentsOf: audioURL as URL)
+            Data.shared.player?.prepareToPlay()
+            Data.shared.player?.numberOfLoops = -1
+            Data.shared.player?.play()
+        } catch{
+            print("Error: \(error)")
+        }
     }
 
     override func didReceiveMemoryWarning() {

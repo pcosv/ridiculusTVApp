@@ -16,6 +16,7 @@ class TurnViewController : UIViewController {
     var isGameRunning = false
 
     override func viewDidLoad() {
+        Data.shared.player?.stop()
         Data.shared.teamTurn = (Data.shared.teams.last?.id)!
         turnLabel.text = String(format: "It's team %d turn!".localized(), Data.shared.teamTurn)
         
