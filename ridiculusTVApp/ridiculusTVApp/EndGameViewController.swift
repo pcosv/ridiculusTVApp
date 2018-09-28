@@ -15,13 +15,16 @@ class EngdGameViewController : UIViewController {
     @IBOutlet weak var duckWinner: UIImageView!
     
     override func viewDidLoad() {
+        //setWinner()
+    }
+    override func didReceiveMemoryWarning() {
+        
+    }
+    func setWinner() {
         labelWinner.text = String(format: "Team %d".localized(), Data.shared.winner[0])
         pointsWinner.text = String(format: "%d points".localized(), Data.shared.winner[1])
         if Data.shared.winner[0] == "1" {
             duckWinner.image = UIImage(named: "BlueDuck")
         }
-    }
-    override func didReceiveMemoryWarning() {
-        
     }
 }

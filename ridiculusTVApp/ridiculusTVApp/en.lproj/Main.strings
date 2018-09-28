@@ -102,7 +102,7 @@
 "hZ7-Zq-zhg.title" = "PlayersViewController";
 
 /* Class = "UILabel"; text = "xx points"; ObjectID = "jNY-Zy-VQU"; */
-"jNY-Zy-VQU.text" = "xx points";
+/#"jNY-Zy-VQU.text" = "xx points";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "nEV-1j-EqI"; */
 "nEV-1j-EqI.text" = "Label";
@@ -120,4 +120,4 @@
 "y6K-lU-jxK.normalTitle" = "start";
 
 /* Class = "UILabel"; text = "Team x"; ObjectID = "ytC-Eo-6Oa"; */
-"ytC-Eo-6Oa.text" = "Team x";
+/*"ytC-Eo-6Oa.text" = "Team x";

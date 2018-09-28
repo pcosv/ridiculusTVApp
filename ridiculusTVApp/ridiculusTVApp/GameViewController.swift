@@ -113,6 +113,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 // na primeira posição do array vai vir o numero do time vencedor
                 // na segunda posição do array vai vir o score do time vencedor
                 Data.shared.winner.append(message!)
+                print(Data.shared.winner)
             }
         }
     }
