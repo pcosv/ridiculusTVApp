@@ -12,7 +12,7 @@ import CoreData
 import AVFoundation
 
 class Data {
-    var noun : [Word] = [Word(name: "Xuxa", type: "noun"),Word(name: "Obama", type: "noun"),Word(name: "Teacher", type: "noun"),Word(name: "Britney", type: "noun"),Word(name: "Lula", type: "noun"),Word(name: "castor", type: "noun"),Word(name: "Eliete", type: "noun"),Word(name: "Francisco", type: "noun"),Word(name: "Brownie", type: "noun")]
+    var noun : [Word] = [Word(name: "Xuxa", type: "noun"),Word(name: "Obama", type: "noun"),Word(name: "Teacher", type: "noun"),Word(name: "Britney", type: "noun"),Word(name: "Lula", type: "noun"),Word(name: "Castor", type: "noun"),Word(name: "", type: "noun"),Word(name: "Francisco", type: "noun"),Word(name: "Harry Potter", type: "noun"),Word(name: "Faustão", type: "noun"),Word(name: "Gandalf", type: "noun"),Word(name: "Sylvester", type: "noun"),Word(name: "Dragon", type: "noun"),Word(name: "Unicorn", type: "noun"),Word(name: "Mermaid", type: "noun"),Word(name: "Mario", type: "noun"),Word(name: "Fairy", type: "noun"),Word(name: "Simba", type: "noun"),Word(name: "pikachu", type: "noun"),Word(name: "Timon", type: "noun")]
     
     var place : [Word] = [Word(name: "Egypt", type: "place"),Word(name: "Paris", type: "place"),Word(name: "Disney", type: "place"),Word(name: "Bar", type: "place"),Word(name: "Castle", type: "place"), Word(name: "Carnival", type: "place"),Word(name: "Zero Um", type: "place"),Word(name: "Lab", type: "place"),Word(name: "Beach", type: "place")]
     
