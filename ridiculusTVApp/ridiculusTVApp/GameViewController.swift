@@ -35,19 +35,19 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == collectionView1 {
             let cella = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCollectionViewCell
-            cella.collectionViewLabel.text = Data.shared.collectionWords[indexPath.row].name.localized()
+            cella.collectionViewLabel.text = Data.shared.collectionWords[indexPath.row].name.localized().lowercased()
             cella.bgImage.image = fundos1[indexPath.row]
             return cella
         }
         if collectionView == collectionView2 {
             let cellb = collectionView.dequeueReusableCell(withReuseIdentifier: "cella", for: indexPath) as! CustomCollectionViewCell
-            cellb.collectionViewLabel.text = Data.shared.newCollectionWords[indexPath.row].name.localized()
+            cellb.collectionViewLabel.text = Data.shared.newCollectionWords[indexPath.row].name.localized().lowercased()
             cellb.bgImage.image = fundos2[indexPath.row]
 
             return cellb
         } else {
             let cellc = collectionView.dequeueReusableCell(withReuseIdentifier: "cellb", for: indexPath) as! CustomCollectionViewCell
-            cellc.collectionViewLabel.text = Data.shared.finalCollectionWords[indexPath.row].name.localized()
+            cellc.collectionViewLabel.text = Data.shared.finalCollectionWords[indexPath.row].name.localized().lowercased()
             cellc.bgImage.image = fundos3[indexPath.row]
 
             return cellc
@@ -155,7 +155,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     var SwiftTimer = Timer()
-    var totalTime = 90
+    var totalTime = 60
     
     func startTimer() {
         SwiftTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
@@ -163,7 +163,7 @@ class GameViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @objc func updateTime() {
         timerLabel.text = "\(timeFormatted(totalTime))"
         if totalTime != 0 {
-            if totalTime % 30 == 0 && totalTime != 90 {
+            if totalTime % 20 == 0 && totalTime != 60 {
                 Data.shared.finalCollectionWords = Data.shared.newCollectionWords
                 Data.shared.newCollectionWords.removeAll()
                 Data.shared.newCollectionWords = Data.shared.collectionWords
